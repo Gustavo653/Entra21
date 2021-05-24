@@ -442,44 +442,44 @@ namespace Aula05
             //}
 
             ////02
-            int x = 2, y = 4;
-            double[,] matriz = new double[x, y];
-            int matricula;
-            double mediaP, mediaT, maior = 0, matMaior = 0, media = 0;
+            //int x = 2, y = 4;
+            //double[,] matriz = new double[x, y];
+            //int matricula;
+            //double mediaP, mediaT, maior = 0, matMaior = 0, media = 0;
 
-            for (int i = 0; i < x; i++)
-            {
-                Console.WriteLine("Insira a matrícula:");
-                matricula = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine();
-                Console.WriteLine("Insira a média das provas:");
-                mediaP = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine("Insira a média dos trabalhos");
-                mediaT = Convert.ToDouble(Console.ReadLine());
+            //for (int i = 0; i < x; i++)
+            //{
+            //    Console.WriteLine("Insira a matrícula:");
+            //    matricula = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine();
+            //    Console.WriteLine("Insira a média das provas:");
+            //    mediaP = Convert.ToDouble(Console.ReadLine());
+            //    Console.WriteLine("Insira a média dos trabalhos");
+            //    mediaT = Convert.ToDouble(Console.ReadLine());
 
-                matriz[i, 0] = matricula;
-                matriz[i, 1] = mediaP;
-                matriz[i, 2] = mediaT;
-            }
+            //    matriz[i, 0] = matricula;
+            //    matriz[i, 1] = mediaP;
+            //    matriz[i, 2] = mediaT;
+            //}
 
-            for (int i = 0; i < x; i++)
-            {
-                matriz[i, 3] = matriz[i, 1] + matriz[i, 2];
-                if (matriz[i, 3] > maior)
-                {
-                    maior = matriz[i, 3];
-                    matMaior = matriz[i, 0];
-                }
-            }
-            Console.WriteLine("A maior nota foi: " + maior);
-            Console.WriteLine("A matrícula da maior nota foi: " + matMaior);
+            //for (int i = 0; i < x; i++)
+            //{
+            //    matriz[i, 3] = matriz[i, 1] + matriz[i, 2];
+            //    if (matriz[i, 3] > maior)
+            //    {
+            //        maior = matriz[i, 3];
+            //        matMaior = matriz[i, 0];
+            //    }
+            //}
+            //Console.WriteLine("A maior nota foi: " + maior);
+            //Console.WriteLine("A matrícula da maior nota foi: " + matMaior);
 
-            for (int i = 0; i < x; i++)
-            {
-                media += matriz[i, 3];
-            }
-            media /= x;
-            Console.WriteLine("A média total foi de: " + media);
+            //for (int i = 0; i < x; i++)
+            //{
+            //    media += matriz[i, 3];
+            //}
+            //media /= x;
+            //Console.WriteLine("A média total foi de: " + media);
 
             ////03
             //int x = 3, y = 6;
@@ -744,98 +744,98 @@ namespace Aula05
             //    }
             //}
 
-            ////06
-            //int x = 5, y = 2;
-            //string[,] matriz = new string[x, y];
-            //matriz[0, 0] = "admin";
-            //matriz[0, 1] = "password";
-            //while (true)
-            //{
-            //    Console.WriteLine("Insira seu usuário e sua senha");
-            //    string user = Console.ReadLine();
-            //    string password = Console.ReadLine();
+            //06
+            int x = 5, y = 2;
+            string[,] matriz = new string[x, y];
+            matriz[0, 0] = "admin";
+            matriz[0, 1] = "password";
+            while (true)
+            {
+                Console.WriteLine("Insira seu usuário e sua senha");
+                string user = Console.ReadLine();
+                string password = Console.ReadLine();
 
-            //    if (user == matriz[0, 0] && password == matriz[0, 1])
-            //    {
-            //        while (true)
-            //        {
-            //            Console.WriteLine("Qual operação você deseja fazer?");
-            //            Console.WriteLine("1 - Criar user | 2 - Deletar user | 3 - LogOut");
-            //            string escolha = Console.ReadLine();
-            //            if (escolha == "1")
-            //            {
-            //                for (int i = 0; i < x; i++)
-            //                {
-            //                    Console.WriteLine();
-            //                    for (int j = 0; j < y; j++)
-            //                    {
-            //                        Console.Write("Id: " + i + " " + matriz[i, j] + " ");
-            //                    }
-            //                }
-            //                Console.WriteLine();
+                if (user == matriz[0, 0] && password == matriz[0, 1])
+                {
+                    while (true)
+                    {
+                        Console.WriteLine("Qual operação você deseja fazer?");
+                        Console.WriteLine("1 - Criar user | 2 - Deletar user | 3 - LogOut");
+                        string escolha = Console.ReadLine();
+                        if (escolha == "1")
+                        {
+                            for (int i = 0; i < x; i++)
+                            {
+                                Console.WriteLine();
+                                for (int j = 0; j < y; j++)
+                                {
+                                    Console.Write("Id: " + i + " " + matriz[i, j] + " ");
+                                }
+                            }
+                            Console.WriteLine();
 
-            //                Console.WriteLine("Insira o usuário e a senha");
-            //                 user = Console.ReadLine();
-            //                 password = Console.ReadLine();
+                            Console.WriteLine("Insira o usuário e a senha");
+                            user = Console.ReadLine();
+                            password = Console.ReadLine();
 
-            //                for (int i = 0; i < x; i++)
-            //                {
-            //                    for (int j = 0; j < y; j++)
-            //                    {
-            //                        if (matriz[i, j] == null && matriz[i, (j + 1)] == null)
-            //                        {
-            //                            matriz[i, j] = user;
-            //                            matriz[i, (j + 1)] = password;
-            //                            Console.WriteLine("Usuário criado");
-            //                            i = 200;
-            //                            break;
-            //                        }
-            //                    }
-            //                }
-            //                Console.WriteLine();
-            //            }
-            //            else if (escolha == "2")
-            //            {
-            //                for (int i = 0; i < x; i++)
-            //                {
-            //                    Console.WriteLine();
-            //                    for (int j = 0; j < y; j++)
-            //                    {
-            //                        Console.Write("Id: " + i + " " + matriz[i, j] + " ");
-            //                    }
-            //                }
-            //                Console.WriteLine();
-            //                Console.WriteLine("Qual id você deseja deletar?");
-            //                int userAp = int.Parse(Console.ReadLine());
-            //                int passwordAp = 0;
+                            for (int i = 0; i < x; i++)
+                            {
+                                for (int j = 0; j < y; j++)
+                                {
+                                    if (matriz[i, j] == null && matriz[i, (j + 1)] == null)
+                                    {
+                                        matriz[i, j] = user;
+                                        matriz[i, (j + 1)] = password;
+                                        Console.WriteLine("Usuário criado");
+                                        i = 200;
+                                        break;
+                                    }
+                                }
+                            }
+                            Console.WriteLine();
+                        }
+                        else if (escolha == "2")
+                        {
+                            for (int i = 0; i < x; i++)
+                            {
+                                Console.WriteLine();
+                                for (int j = 0; j < y; j++)
+                                {
+                                    Console.Write("Id: " + i + " " + matriz[i, j] + " ");
+                                }
+                            }
+                            Console.WriteLine();
+                            Console.WriteLine("Qual id você deseja deletar?");
+                            int userAp = int.Parse(Console.ReadLine());
+                            int passwordAp = 0;
 
-            //                if (matriz[userAp, passwordAp] != null && matriz[userAp, (passwordAp + 1)] != null)
-            //                {
-            //                    matriz[userAp, passwordAp] = null;
-            //                    matriz[userAp, (passwordAp + 1)] = null;
-            //                    Console.WriteLine("Usuário apagado");
-            //                }
-            //            }
-            //            else
-            //            {
-            //                Console.WriteLine("Deslogando");
-            //                break;
-            //            }
-            //        }
-            //    }
-            //    for (int i = 0; i < x; i++)
-            //    {
-            //        for (int j = 0; j < y; j++)
-            //        {
-            //            if (matriz[i, j] == user && matriz[i, (j + 1)] == password)
-            //            {
-            //                Console.WriteLine("Usuário logado");
-            //            }
-            //        }
-            //    }
-            //}
+                            if (matriz[userAp, passwordAp] != null && matriz[userAp, (passwordAp + 1)] != null)
+                            {
+                                matriz[userAp, passwordAp] = null;
+                                matriz[userAp, (passwordAp + 1)] = null;
+                                Console.WriteLine("Usuário apagado");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Deslogando");
+                            break;
+                        }
+                    }
+                }
+                for (int i = 0; i < x; i++)
+                {
+                    for (int j = 0; j < y; j++)
+                    {
+                        if (matriz[i, j] == user && matriz[i, (j + 1)] == password)
+                        {
+                            Console.WriteLine("Usuário logado");
+                        }
+                    }
+                }
+            }
 
-            ////07
+            //07
             //int x = 4, y = 3;
             //string[,] matriz = new string[x, y];
             //while (true)

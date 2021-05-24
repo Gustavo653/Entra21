@@ -137,9 +137,9 @@ namespace Aula06
             //Program prog = new Program();
             //prog.Joeslei01();
 
-            ////02
-            //Program prog = new Program();
-            //prog.CxEletronico02();
+            //02
+            Program prog = new Program();
+            prog.CxEletronico02();
 
             ////03
             //Program prog = new Program();
