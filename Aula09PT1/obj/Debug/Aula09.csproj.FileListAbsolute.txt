@@ -1,0 +1,7 @@
+C:\Users\ujipe\Google Drive\Cursos\C# - Entra21\GitHub\Entra21\Aula09\bin\Debug\Aula09.exe.config
+C:\Users\ujipe\Google Drive\Cursos\C# - Entra21\GitHub\Entra21\Aula09\bin\Debug\Aula09.exe
+C:\Users\ujipe\Google Drive\Cursos\C# - Entra21\GitHub\Entra21\Aula09\bin\Debug\Aula09.pdb
+C:\Users\ujipe\Google Drive\Cursos\C# - Entra21\GitHub\Entra21\Aula09\obj\Debug\Aula09.csproj.AssemblyReference.cache
+C:\Users\ujipe\Google Drive\Cursos\C# - Entra21\GitHub\Entra21\Aula09\obj\Debug\Aula09.csproj.CoreCompileInputs.cache
+C:\Users\ujipe\Google Drive\Cursos\C# - Entra21\GitHub\Entra21\Aula09\obj\Debug\Aula09.exe
+C:\Users\ujipe\Google Drive\Cursos\C# - Entra21\GitHub\Entra21\Aula09\obj\Debug\Aula09.pdb
