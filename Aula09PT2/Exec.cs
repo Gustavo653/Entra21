@@ -30,10 +30,6 @@ namespace Aula09PT2
             this.genero = genero;
             this.idade = idade;
         }
-
-        public Exec02()
-        {
-        }
     }
     class Exec03
     {
@@ -45,22 +41,74 @@ namespace Aula09PT2
             this.nome = nome;
             this.nomeDono = nomeDono;
             this.idade = idade;
+        }
+    }
+    class Exec04
+    {
+        public string nome;
+        public int quantidade;
+        public double preco;
 
-            if (idade > 4)
+        public Exec04(string nome, int quantidade, double preco)
+        {
+            this.nome = nome;
+            this.quantidade = quantidade;
+            this.preco = preco;
+        }
+    }
+    class Exec05
+    {
+        public string nome, especie;
+        public int tempoZoo;
+
+        public Exec05(string nome, string especie, int tempoZoo)
+        {
+            this.nome = nome;
+            this.especie = especie;
+            this.tempoZoo = tempoZoo;
+        }
+    }
+    class Exec06
+    {
+        public string nome, cpf;
+        public double salario;
+
+        public Exec06(string nome, string cpf, double salario)
+        {
+            this.nome = nome;
+            this.cpf = cpf;
+            this.salario = salario;
+            if (salario < 1500)
             {
-                Console.WriteLine(nome);
-                Console.WriteLine(nomeDono);
-                Console.WriteLine(idade);
+                this.salario = salario * 1.2;
             }
         }
+    }
+    class Exec07
+    {
+        public string nome;
+        public double n1, n2, n3;
 
-        public void MostrarCachorros()
+        public Exec07(string nome, double n1, double n2, double n3)
         {
-
+            this.nome = nome;
+            this.n1 = n1;
+            this.n2 = n2;
+            this.n3 = n3;
         }
 
-        public Exec03()
+        public static void MediaAprovacao(double n1, double n2, double n3)
         {
+            double media = n1 + n2 + n3;
+            media /= 3;
+            if (media > 7)
+            {
+                Console.WriteLine("O aluno foi aprovado! Sua nota foi: " + media);
+            }
+            else
+            {
+                Console.WriteLine("O aluno foi reprovado! Sua nota foi: " + media);
+            }
         }
     }
 }

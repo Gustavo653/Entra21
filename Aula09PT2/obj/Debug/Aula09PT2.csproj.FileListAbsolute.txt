@@ -5,3 +5,10 @@ C:\Users\ujipe\Google Drive\Cursos\C# - Entra21\GitHub\Entra21\Aula09PT2\bin\Deb
 C:\Users\ujipe\Google Drive\Cursos\C# - Entra21\GitHub\Entra21\Aula09PT2\bin\Debug\Aula09PT2.pdb
 C:\Users\ujipe\Google Drive\Cursos\C# - Entra21\GitHub\Entra21\Aula09PT2\obj\Debug\Aula09PT2.exe
 C:\Users\ujipe\Google Drive\Cursos\C# - Entra21\GitHub\Entra21\Aula09PT2\obj\Debug\Aula09PT2.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT2\bin\Debug\Aula09PT2.exe.config
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT2\bin\Debug\Aula09PT2.exe
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT2\bin\Debug\Aula09PT2.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT2\obj\Debug\Aula09PT2.csprojAssemblyReference.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT2\obj\Debug\Aula09PT2.csproj.CoreCompileInputs.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT2\obj\Debug\Aula09PT2.exe
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT2\obj\Debug\Aula09PT2.pdb
