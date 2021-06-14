@@ -1,0 +1,16 @@
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\bin\Debug\net5.0\Aula09PT3.exe
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\bin\Debug\net5.0\Aula09PT3.deps.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\bin\Debug\net5.0\Aula09PT3.runtimeconfig.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\bin\Debug\net5.0\Aula09PT3.runtimeconfig.dev.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\bin\Debug\net5.0\Aula09PT3.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\bin\Debug\net5.0\ref\Aula09PT3.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\bin\Debug\net5.0\Aula09PT3.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\obj\Debug\net5.0\Aula09PT3.csprojAssemblyReference.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\obj\Debug\net5.0\Aula09PT3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\obj\Debug\net5.0\Aula09PT3.AssemblyInfoInputs.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\obj\Debug\net5.0\Aula09PT3.AssemblyInfo.cs
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\obj\Debug\net5.0\Aula09PT3.csproj.CoreCompileInputs.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\obj\Debug\net5.0\Aula09PT3.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\obj\Debug\net5.0\ref\Aula09PT3.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\obj\Debug\net5.0\Aula09PT3.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT3\obj\Debug\net5.0\Aula09PT3.genruntimeconfig.cache
