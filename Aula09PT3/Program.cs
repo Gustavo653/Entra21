@@ -65,7 +65,7 @@ namespace Aula09PT3
             Console.WriteLine(pessoa.GetCpf());
             for (int i = 0; i < pessoa.GetConsultas().Length; i++)
             {
-                if(pessoa.GetConsultas()[i] == null || pessoa.GetConsultas()[i] == "")
+                if(pessoa.GetConsultas()[i] == null)
                 {
                     break;
                 }
