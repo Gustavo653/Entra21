@@ -1,0 +1,16 @@
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\bin\Debug\net5.0\Aula09PT4.exe
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\bin\Debug\net5.0\Aula09PT4.deps.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\bin\Debug\net5.0\Aula09PT4.runtimeconfig.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\bin\Debug\net5.0\Aula09PT4.runtimeconfig.dev.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\bin\Debug\net5.0\Aula09PT4.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\bin\Debug\net5.0\ref\Aula09PT4.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\bin\Debug\net5.0\Aula09PT4.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\obj\Debug\net5.0\Aula09PT4.csprojAssemblyReference.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\obj\Debug\net5.0\Aula09PT4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\obj\Debug\net5.0\Aula09PT4.AssemblyInfoInputs.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\obj\Debug\net5.0\Aula09PT4.AssemblyInfo.cs
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\obj\Debug\net5.0\Aula09PT4.csproj.CoreCompileInputs.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\obj\Debug\net5.0\Aula09PT4.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\obj\Debug\net5.0\ref\Aula09PT4.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\obj\Debug\net5.0\Aula09PT4.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT4 - Heranca\obj\Debug\net5.0\Aula09PT4.genruntimeconfig.cache
