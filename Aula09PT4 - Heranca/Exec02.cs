@@ -19,14 +19,12 @@ namespace Aula09PT4
             int conforto = horas;
             conforto *= 100;
             return conforto;
-            Console.WriteLine("Você ganhou " + conforto + " de conforto");
         }
         public double Trabalhar(int horas)
         {
             double dinheiro = horas;
             dinheiro *= 24.52;
             return dinheiro;
-            Console.WriteLine("Você ganhou " + dinheiro + " de dinheiro");
         }
     }
     class Pessoa2 : Comportamento
@@ -41,5 +39,10 @@ namespace Aula09PT4
         public string Nome { get; set; }
         public double Dopamina { get; set; }
         public int Conforto { get; set; }
+    }
+    class Funcionario : Comportamento
+    {
+        public string Nome { get; set; }
+        public double Dinheiro { get; set; }
     }
 }
