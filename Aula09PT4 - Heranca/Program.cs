@@ -269,62 +269,91 @@ namespace Aula09PT4
             //    }
             //}
 
-            CaixaEletronico cx = new CaixaEletronico();
-            cx.NumConta = 1234;
-            cx.SenhaConta = 123;
-            cx.ValorConta = 2000;
-            cx.Cpf = "123.456.789-00";
-            cx.Id = 3;
-            cx.Nome = "Gustavo";
-            cx.ValorInterno = 1000;
+            //CaixaEletronico cx = new CaixaEletronico();
+            //cx.NumConta = 1234;
+            //cx.SenhaConta = 123;
+            //cx.ValorConta = 2000;
+            //cx.Cpf = "123.456.789-00";
+            //cx.Id = 3;
+            //cx.Nome = "Gustavo";
+            //cx.ValorInterno = 1000;
 
-            while (true)
+            //while (true)
+            //{
+            //    Console.WriteLine("Insira o número da sua conta e sua senha");
+            //    string login = Console.ReadLine();
+            //    double pswd = double.Parse(Console.ReadLine());
+            //    if (login == "1234" && pswd == 123)
+            //    {
+            //        while (true)
+            //        {
+            //            Console.WriteLine("MENU");
+            //            Console.WriteLine("1 - Extrato");
+            //            Console.WriteLine("2 - Saque");
+            //            Console.WriteLine("3 - Sair");
+            //            login = Console.ReadLine();
+            //            if (login == "1")
+            //            {
+            //                Console.WriteLine(cx.Nome);
+            //                Console.WriteLine(cx.Cpf);
+            //                Console.WriteLine("Valor restante possível de sacar em Caixa Eletrônico: " + cx.ValorInterno);
+            //                Console.WriteLine("Saldo: " + cx.ValorConta);
+            //            }
+            //            else if (login == "2")
+            //            {
+            //                Console.WriteLine("Quanto você deseja sacar?");
+            //                pswd = double.Parse(Console.ReadLine());
+            //                if (pswd < cx.ValorConta && pswd < cx.ValorInterno)
+            //                {
+            //                    Console.WriteLine("Saque efetuado!");
+            //                    Console.WriteLine("Valor: " + pswd);
+            //                    cx.ValorInterno -= pswd;
+            //                    cx.ValorConta -= pswd;
+            //                }
+            //                else
+            //                {
+            //                    Console.WriteLine("Você excedeu seu limite diário!");
+            //                }
+            //            }
+            //            else
+            //            {
+            //                break;
+            //            }
+            //        }
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Credenciais erradas, tente novamente");
+            //    }
+            //}
+
+            List<Funcionario1> emp = new List<Funcionario1>();
+            int i;
+            for (i = 0; i < 3; i++)
             {
-                Console.WriteLine("Insira o número da sua conta e sua senha");
-                string login = Console.ReadLine();
-                double pswd = double.Parse(Console.ReadLine());
-                if (login == "1234" && pswd == 123)
+                Funcionario1 func = new Funcionario1();
+                func.Nome = Console.ReadLine();
+                func.Cargo = Console.ReadLine();
+                if (func.Cargo == "entregador")
                 {
-                    while (true)
-                    {
-                        Console.WriteLine("MENU");
-                        Console.WriteLine("1 - Extrato");
-                        Console.WriteLine("2 - Saque");
-                        Console.WriteLine("3 - Sair");
-                        login = Console.ReadLine();
-                        if (login == "1")
-                        {
-                            Console.WriteLine(cx.Nome);
-                            Console.WriteLine(cx.Cpf);
-                            Console.WriteLine("Valor restante possível de sacar em Caixa Eletrônico: " + cx.ValorInterno);
-                            Console.WriteLine("Saldo: " + cx.ValorConta);
-                        }
-                        else if (login == "2")
-                        {
-                            Console.WriteLine("Quanto você deseja sacar?");
-                            pswd = double.Parse(Console.ReadLine());
-                            if (pswd < cx.ValorConta && pswd < cx.ValorInterno)
-                            {
-                                Console.WriteLine("Saque efetuado!");
-                                Console.WriteLine("Valor: " + pswd);
-                                cx.ValorInterno -= pswd;
-                                cx.ValorConta -= pswd;
-                            }
-                            else
-                            {
-                                Console.WriteLine("Você excedeu seu limite diário!");
-                            }
-                        }
-                        else
-                        {
-                            break;
-                        }
-                    }
+                    func.Salario = 5324.82;
                 }
-                else
+                else if (func.Cargo == "piao")
                 {
-                    Console.WriteLine("Credenciais erradas, tente novamente");
+                    func.Salario = 4785.26;
                 }
+                emp.Add(func);
+            }
+            Funcionario1 func1 = new Funcionario1();
+
+            func1.Cargo = "gerente";
+            func1.Salario = 2485.64 * i;
+            emp.Add(func1);
+            foreach (var item in emp)
+            {
+                Console.WriteLine(item.Nome);
+                Console.WriteLine(item.Cargo);
+                Console.WriteLine(item.Salario);
             }
         }
     }

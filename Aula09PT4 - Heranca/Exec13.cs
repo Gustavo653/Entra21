@@ -22,4 +22,10 @@ namespace Aula09PT4
         public int Id { get; set; }
         public double ValorInterno { get; set; }
     }
+   class Funcionario1
+    {
+        public string Nome { get; set; }
+        public string Cargo { get; set; }
+        public double Salario { get; set; }
+    }
 }
