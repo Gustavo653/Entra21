@@ -22,10 +22,14 @@ namespace Aula09PT4
         public int Id { get; set; }
         public double ValorInterno { get; set; }
     }
-   class Funcionario1
+   class Funcionario1 : DadosBancarios
     {
         public string Nome { get; set; }
         public string Cargo { get; set; }
         public double Salario { get; set; }
+    }
+    class Empresa1 : DadosBancarios
+    {
+        public List<Funcionario1> Funcionario { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Aula09PT4
 {
@@ -326,34 +327,247 @@ namespace Aula09PT4
             //        Console.WriteLine("Credenciais erradas, tente novamente");
             //    }
             //}
+            //
+            //List<Funcionario1> funcs = new List<Funcionario1>();
+            //int escolha;
+            //for (int i = 0; i < 6; i++)
+            //{
+            //    Funcionario1 func = new Funcionario1();
 
-            List<Funcionario1> emp = new List<Funcionario1>();
-            int i;
-            for (i = 0; i < 3; i++)
+            //    if (i == 5)
+            //    {
+            //        Console.WriteLine("Gerando gerente!");
+            //        func.Cargo = "Gerente";
+            //        func.Salario = 2485.64 * (funcs.Count-1);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("O funcionário é peão ou entregador?");
+            //        Console.WriteLine("1 - peão / 2 - entregador");
+            //        escolha = int.Parse(Console.ReadLine());
+            //        if (escolha == 1)
+            //        {
+            //            func.Cargo = "Peão";
+            //            Console.WriteLine("Insira o salário");
+            //            double salario = double.Parse(Console.ReadLine());
+            //            func.Salario = salario;
+            //        }
+            //        else
+            //        {
+            //            func.Cargo = "Entregador";
+            //            Console.WriteLine("Insira o salário");
+            //            double salario = double.Parse(Console.ReadLine());
+            //            func.Salario = salario;
+            //        }
+            //    }
+            //    funcs.Add(func);
+            //}
+            //while (true)
+            //{
+            //    Console.WriteLine("O que você deseja fazer?");
+            //    Console.WriteLine("1 - Aumento");
+            //    Console.WriteLine("2 - Demitir");
+            //    Console.WriteLine("3 - Fechamento");
+            //    escolha = int.Parse(Console.ReadLine());
+
+            //    if (escolha == 1)
+            //    {
+            //        Console.WriteLine("Mostrando todos os funcionários e seus respectivos ID's");
+            //        for (int i = 0; i < funcs.Count; i++)
+            //        {
+            //            if (i != (funcs.Count - 1))
+            //            {
+            //                Console.WriteLine("ID: " + (i+1));
+            //                Console.WriteLine(funcs[i].Cargo);
+            //                Console.WriteLine(funcs[i].Salario);
+            //            }
+            //        }
+            //        Console.WriteLine("Qual ID você deseja?");
+            //        escolha = int.Parse(Console.ReadLine());
+            //        escolha--;
+            //        if (escolha == (funcs.Count - 1))
+            //        {
+            //            Console.WriteLine("Funcionário inválido!");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Você quer aumentar quanto?");
+            //            Console.WriteLine("Dica: 1,20 = 20%");
+            //            double aumento = double.Parse(Console.ReadLine());
+            //            funcs[escolha].Salario *= aumento;
+            //        }
+            //    }
+            //    else if (escolha == 2)
+            //    {
+            //        Console.WriteLine("Mostrando todos os funcionários e seus respectivos ID's");
+            //        for (int i = 0; i < funcs.Count; i++)
+            //        {
+            //            if (i != (funcs.Count - 1))
+            //            {
+            //                Console.WriteLine("ID: " + (i + 1));
+            //                Console.WriteLine(funcs[i].Cargo);
+            //                Console.WriteLine(funcs[i].Salario);
+            //            }
+            //        }
+            //        Console.WriteLine("Qual ID você deseja?");
+            //        escolha = int.Parse(Console.ReadLine());
+            //        escolha--;
+            //        if (escolha == (funcs.Count - 1))
+            //        {
+            //            Console.WriteLine("Funcionário inválido!");
+            //        }
+            //        else
+            //        {
+            //            funcs.RemoveAt(escolha);
+            //            funcs[funcs.Count-1].Salario = 2485.64 * (funcs.Count - 1);
+            //            Console.WriteLine("Funcionário demitido!");
+            //        }
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Realizando fechamento!");
+
+            //        Console.WriteLine("Total de custos:");
+            //        double totalCustos = 0;
+            //        int contP = 0, contE = 0;
+            //        foreach (var item in funcs)
+            //        {
+            //            totalCustos += item.Salario;
+            //            if (item.Cargo == "Entregador")
+            //            {
+            //                contE++;
+            //            }
+            //            else
+            //            {
+            //                contP++;
+            //            }
+            //        }
+            //        Console.WriteLine(totalCustos);
+
+            //        double totalGanhos = 0;
+            //        Console.WriteLine("Total de ganhos: ");
+            //        totalGanhos += contP * 4785.26;
+            //        totalGanhos += contE * 5324.82;
+            //        totalGanhos += (contE+contP) * 2485.64;
+            //        Console.WriteLine(totalGanhos);
+
+            //        double total = 0;
+            //        total += totalGanhos;
+            //        total -= totalCustos;
+            //        if (total > 0)
+            //        {
+            //            Console.WriteLine("Houve lucro!");
+            //            Console.WriteLine(total);
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Houve prejuízo!");
+            //            Console.WriteLine(total);
+            //        }
+            //    }
+            //}
+
+
+            //Lista03Lista03Lista03Lista03Lista03Lista03Lista03Lista03Lista03Lista03Lista03Lista03
+            ////01a
+            //List<Carro> carros = new List<Carro>();
+            //for (int i = 0; i < 4; i++)
+            //{
+            //    Carro car = new Carro();
+            //    car.Proprietario = Console.ReadLine();
+            //    car.KMRodados = int.Parse(Console.ReadLine());
+            //    car.Combustivel = Console.ReadLine();
+            //    car.CV = int.Parse(Console.ReadLine());
+            //    car.Modelo = Console.ReadLine();
+            //    car.Nome = Console.ReadLine();
+            //    carros.Add(car);
+            //}
+
+            //List<Carro> carrosOrganizados = carros.OrderBy(x => x.CV).ToList();
+            //foreach (var item in carrosOrganizados)
+            //{
+            //    Console.WriteLine("{0} {1} {2} {3} {4} {5}"
+            //        , item.Proprietario
+            //        , item.KMRodados
+            //        , item.Combustivel
+            //        , item.CV
+            //        , item.Modelo
+            //        , item.Nome);
+            //}
+
+            ////01b
+            //List<Aviao> aviaoes = new List<Aviao>();
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Aviao aviao = new Aviao();
+            //    aviao.Combustivel = Console.ReadLine();
+            //    aviao.CV = int.Parse(Console.ReadLine());
+            //    aviao.Modelo = Console.ReadLine();
+            //    aviao.Nome = Console.ReadLine();
+            //    aviao.Empresa = Console.ReadLine();
+            //    aviao.Linha = Console.ReadLine();
+            //    aviaoes.Add(aviao);
+            //}
+            //Console.WriteLine("Insira a empresa que você deseja:");
+            //string emp = Console.ReadLine();
+
+            //foreach (var item in aviaoes)
+            //{
+            //    if (item.Empresa == emp)
+            //    {
+            //        Console.WriteLine("{0} {1} {2} {3} {4} {5}"
+            //        , item.Empresa
+            //        , item.Linha
+            //        , item.Combustivel
+            //        , item.CV
+            //        , item.Modelo
+            //        , item.Nome);
+            //    }
+            //}
+
+            //01c
+            List<Navio> navios = new List<Navio>();
+            for (int i = 0; i < 3; i++)
             {
-                Funcionario1 func = new Funcionario1();
-                func.Nome = Console.ReadLine();
-                func.Cargo = Console.ReadLine();
-                if (func.Cargo == "entregador")
+                Navio navio = new Navio();
+                navio.Combustivel = Console.ReadLine();
+                navio.CV = int.Parse(Console.ReadLine());
+                navio.Modelo = Console.ReadLine();
+                navio.Nome = Console.ReadLine();
+                navio.Tamanho = int.Parse(Console.ReadLine());
+                int qnt;
+                while (true)
                 {
-                    func.Salario = 5324.82;
+                    qnt = int.Parse(Console.ReadLine());
+                    if (qnt > 20 || qnt > 0)
+                    {
+                        Console.WriteLine("Insira um valor menor que 20 e maior que 0");
+                    }
+                    else
+                    {
+                        break;
+                    }
                 }
-                else if (func.Cargo == "piao")
+                navio.Cargo = new int[qnt];
+                for (int j = 0; j < navio.Cargo.Length; j++)
                 {
-                    func.Salario = 4785.26;
+                    navio.Cargo[j] = 1;
                 }
-                emp.Add(func);
+
+                navios.Add(navio);
             }
-            Funcionario1 func1 = new Funcionario1();
 
-            func1.Cargo = "gerente";
-            func1.Salario = 2485.64 * i;
-            emp.Add(func1);
-            foreach (var item in emp)
+            List<Navio> naviosOrganizados = navios.OrderBy(x => x.Cargo.Length).ToList();
+
+            Console.WriteLine("{0} {1} {2} {3} {4}"
+                    , naviosOrganizados[naviosOrganizados.Count - 1].Tamanho
+                    , naviosOrganizados[naviosOrganizados.Count - 1].Combustivel
+                    , naviosOrganizados[naviosOrganizados.Count - 1].CV
+                    , naviosOrganizados[naviosOrganizados.Count - 1].Modelo
+                    , naviosOrganizados[naviosOrganizados.Count - 1].Nome);
+            for (int i = 0; i < naviosOrganizados[naviosOrganizados.Count - 1].Cargo.Length; i++)
             {
-                Console.WriteLine(item.Nome);
-                Console.WriteLine(item.Cargo);
-                Console.WriteLine(item.Salario);
+                Console.WriteLine(naviosOrganizados[naviosOrganizados.Count - 1].Cargo[i]);
             }
         }
     }
