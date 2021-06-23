@@ -539,7 +539,7 @@ namespace Aula09PT4
                 while (true)
                 {
                     qnt = int.Parse(Console.ReadLine());
-                    if (qnt > 20 || qnt > 0)
+                    if (qnt > 20 || qnt < 0)
                     {
                         Console.WriteLine("Insira um valor menor que 20 e maior que 0");
                     }

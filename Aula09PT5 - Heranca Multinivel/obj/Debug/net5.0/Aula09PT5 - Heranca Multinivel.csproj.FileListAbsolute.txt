@@ -1,0 +1,16 @@
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\bin\Debug\net5.0\Aula09PT5 - Heranca Multinivel.exe
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\bin\Debug\net5.0\Aula09PT5 - Heranca Multinivel.deps.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\bin\Debug\net5.0\Aula09PT5 - Heranca Multinivel.runtimeconfig.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\bin\Debug\net5.0\Aula09PT5 - Heranca Multinivel.runtimeconfig.dev.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\bin\Debug\net5.0\Aula09PT5 - Heranca Multinivel.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\bin\Debug\net5.0\ref\Aula09PT5 - Heranca Multinivel.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\bin\Debug\net5.0\Aula09PT5 - Heranca Multinivel.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\obj\Debug\net5.0\Aula09PT5 - Heranca Multinivel.csprojAssemblyReference.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\obj\Debug\net5.0\Aula09PT5 - Heranca Multinivel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\obj\Debug\net5.0\Aula09PT5 - Heranca Multinivel.AssemblyInfoInputs.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\obj\Debug\net5.0\Aula09PT5 - Heranca Multinivel.AssemblyInfo.cs
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\obj\Debug\net5.0\Aula09PT5 - Heranca Multinivel.csproj.CoreCompileInputs.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\obj\Debug\net5.0\Aula09PT5 - Heranca Multinivel.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\obj\Debug\net5.0\ref\Aula09PT5 - Heranca Multinivel.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\obj\Debug\net5.0\Aula09PT5 - Heranca Multinivel.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT5 - Heranca Multinivel\obj\Debug\net5.0\Aula09PT5 - Heranca Multinivel.genruntimeconfig.cache
