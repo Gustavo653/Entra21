@@ -151,26 +151,29 @@ namespace Aula09PT5___Heranca_Multinivel
 
             Ciclista cic = new Ciclista();
             Random ran = new Random();
-            ////a
-            //Console.WriteLine("Insira o nome:");
-            //cic.Nome = Console.ReadLine();
-            //Console.WriteLine("Insira a velocidade:");
-            //cic.Velocidade = Convert.ToDouble(Console.ReadLine());
-            //Console.WriteLine("Insira a distância:");
-            //cic.Distancia = Convert.ToDouble(Console.ReadLine());
+            //a
+            Console.WriteLine("Insira o nome:");
+            cic.Nome = Console.ReadLine();
+            Console.WriteLine("Insira a velocidade:");
+            cic.Velocidade = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Insira a distância:");
+            cic.Distancia = Convert.ToDouble(Console.ReadLine());
 
-            //Console.WriteLine("O tempo que o ciclista levará será de: " + (cic.Distancia / cic.Velocidade) + "segundos.");
+            Console.WriteLine("O tempo que " + cic.Nome + " levará será de: " + (cic.Distancia / cic.Velocidade) + " segundos.");
 
-            ////b
-            //Console.WriteLine("Insira o nome:");
-            //cic.Nome = Console.ReadLine();
-            //cic.Velocidade = ran.Next(13, 26);
-            //cic.Distancia = ran.Next(500, 2001);
+            //b
+            Console.WriteLine("Insira o nome:");
+            cic.Nome = Console.ReadLine();
+            cic.Velocidade = ran.Next(13, 26);
+            cic.Distancia = ran.Next(500, 2001);
 
-            //Console.WriteLine("O tempo que o ciclista levará será de: " + (cic.Distancia / cic.Velocidade) + "segundos.");
+
+            Console.WriteLine("O tempo que " + cic.Nome + " levará será de: " + (cic.Distancia / cic.Velocidade) + " segundos.");
 
             //c
             List<Ciclista> ciclistas = new List<Ciclista>();
+            Console.WriteLine("Qual será a distância?");
+            double dist = Convert.ToDouble(Console.ReadLine());
             for (int i = 0; i < 4; i++)
             {
                 Ciclista ciclista = new Ciclista();
@@ -178,7 +181,7 @@ namespace Aula09PT5___Heranca_Multinivel
                 ciclista.Nome = Console.ReadLine();
                 Console.WriteLine("Insira a velocidade:");
                 ciclista.Velocidade = Convert.ToDouble(Console.ReadLine());
-                ciclista.Distancia = 1000;
+                ciclista.Distancia = dist;
                 ciclistas.Add(ciclista);
             }
             List<Ciclista> ciclistaOrganizado = ciclistas.OrderByDescending(x => x.Velocidade).ToList();

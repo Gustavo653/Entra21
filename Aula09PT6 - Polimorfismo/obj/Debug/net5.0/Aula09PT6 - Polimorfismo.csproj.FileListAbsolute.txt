@@ -1,0 +1,16 @@
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\bin\Debug\net5.0\Aula09PT6 - Polimorfismo.exe
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\bin\Debug\net5.0\Aula09PT6 - Polimorfismo.deps.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\bin\Debug\net5.0\Aula09PT6 - Polimorfismo.runtimeconfig.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\bin\Debug\net5.0\Aula09PT6 - Polimorfismo.runtimeconfig.dev.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\bin\Debug\net5.0\Aula09PT6 - Polimorfismo.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\bin\Debug\net5.0\ref\Aula09PT6 - Polimorfismo.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\bin\Debug\net5.0\Aula09PT6 - Polimorfismo.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\obj\Debug\net5.0\Aula09PT6 - Polimorfismo.csprojAssemblyReference.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\obj\Debug\net5.0\Aula09PT6 - Polimorfismo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\obj\Debug\net5.0\Aula09PT6 - Polimorfismo.AssemblyInfoInputs.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\obj\Debug\net5.0\Aula09PT6 - Polimorfismo.AssemblyInfo.cs
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\obj\Debug\net5.0\Aula09PT6 - Polimorfismo.csproj.CoreCompileInputs.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\obj\Debug\net5.0\Aula09PT6 - Polimorfismo.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\obj\Debug\net5.0\ref\Aula09PT6 - Polimorfismo.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\obj\Debug\net5.0\Aula09PT6 - Polimorfismo.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT6 - Polimorfismo\obj\Debug\net5.0\Aula09PT6 - Polimorfismo.genruntimeconfig.cache
