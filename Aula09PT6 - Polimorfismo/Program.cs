@@ -287,64 +287,91 @@ namespace Aula09PT6___Polimorfismo
             //    Console.Clear();
             //}
 
-            //03
-            Cliente cli = new Cliente("Nome", 2500);
+            ////03
+            //Cliente cli = new Cliente("Nome", 2500);
 
-            Novo imNovo = new Novo("Rua Novo", 1000);
-            Novo imNovo2 = new Novo("Rua Novo", 2000);
-            Velho imVelho = new Velho("Rua Velho", 2000);
-            Velho imVelho2 = new Velho("Rua Velho", 4000);
+            //Novo imNovo = new Novo("Rua Novo", 1000);
+            //Novo imNovo2 = new Novo("Rua Novo", 2000);
+            //Velho imVelho = new Velho("Rua Velho", 2000);
+            //Velho imVelho2 = new Velho("Rua Velho", 4000);
 
-            imNovo.PrecoAdicional = 1000;
-            imNovo2.PrecoAdicional = 1000;
-            imVelho.Desconto = 1000;
-            imVelho2.Desconto = 1000;
+            //imNovo.PrecoAdicional = 1000;
+            //imNovo2.PrecoAdicional = 1000;
+            //imVelho.Desconto = 1000;
+            //imVelho2.Desconto = 1000;
 
-            List<Imovel> imoveis = new List<Imovel>();
-            imoveis.Add(imNovo);
-            imoveis.Add(imNovo2);
-            imoveis.Add(imVelho);
-            imoveis.Add(imVelho2);
+            //List<Imovel> imoveis = new List<Imovel>();
+            //imoveis.Add(imNovo);
+            //imoveis.Add(imNovo2);
+            //imoveis.Add(imVelho);
+            //imoveis.Add(imVelho2);
+            //while (true)
+            //{
+            //    Console.WriteLine("Nome do cliente: " + cli.Nome);
+            //    Console.WriteLine("Dinheiro do cliente: " + cli.Dinheiro);
+            //    Console.WriteLine();
+            //    for (int i = 0; i < imoveis.Count; i++)
+            //    {
+            //        Console.WriteLine("ID: " + (i + 1));
+            //        imoveis[i].CalculaValor();
+            //    }
+
+            //    Console.WriteLine("Insira o ID desejado");
+            //    int escolha = int.Parse(Console.ReadLine());
+            //    escolha--;
+            //    try
+            //    {
+            //        if(imoveis[escolha].Preco > cli.Dinheiro)
+            //        {
+            //            Console.WriteLine("Você vai precisar parcelar este imóvel.");
+            //            double parcelamento = imoveis[escolha].Preco;
+            //            parcelamento /= 12;
+            //            parcelamento *= 1.1674;
+            //            Console.WriteLine("Cada parcela será de: " + parcelamento);
+            //            parcelamento *= 12;
+            //            Console.WriteLine("O valor que você precisa parcelar será de: " + imoveis[escolha].Preco);
+            //            Console.WriteLine("O valor total com acréscimo " + parcelamento);
+            //        }
+            //        else
+            //        {
+            //            cli.Dinheiro -= imoveis[escolha].Preco;
+            //            Console.WriteLine("Agradecemos pela compra!");
+            //            Console.WriteLine("Seu saldo restante é de: " + cli.Dinheiro);
+            //        }
+            //    }
+            //    catch (Exception)
+            //    {
+            //        Console.WriteLine("Imóvel inválido!");
+            //    }
+            //    Console.ReadKey();
+            //    Console.Clear();
+            //}
+
+            //Lista02
+            //1
+            List<Pessoa> agenda = new List<Pessoa>();
             while (true)
             {
-                Console.WriteLine("Nome do cliente: " + cli.Nome);
-                Console.WriteLine("Dinheiro do cliente: " + cli.Dinheiro);
-                Console.WriteLine();
-                for (int i = 0; i < imoveis.Count; i++)
-                {
-                    Console.WriteLine("ID: " + (i + 1));
-                    imoveis[i].CalculaValor();
-                }
-
-                Console.WriteLine("Insira o ID desejado");
+                Console.WriteLine("Digite 1 para PF ou 2 para PJ");
                 int escolha = int.Parse(Console.ReadLine());
-                escolha--;
-                try
+                if (escolha == 1)
                 {
-                    if(imoveis[escolha].Preco > cli.Dinheiro)
-                    {
-                        Console.WriteLine("Você vai precisar parcelar este imóvel.");
-                        double parcelamento = imoveis[escolha].Preco;
-                        parcelamento /= 12;
-                        parcelamento *= 1.1674;
-                        Console.WriteLine("Cada parcela será de: " + parcelamento);
-                        parcelamento *= 12;
-                        Console.WriteLine("O valor que você precisa parcelar será de: " + imoveis[escolha].Preco);
-                        Console.WriteLine("O valor total com acréscimo " + parcelamento);
-                    }
-                    else
-                    {
-                        cli.Dinheiro -= imoveis[escolha].Preco;
-                        Console.WriteLine("Agradecemos pela compra!");
-                        Console.WriteLine("Seu saldo restante é de: " + cli.Dinheiro);
-                    }
+                    Console.WriteLine("Insira um nome");
+                    string nome = Console.ReadLine();
+                    Console.WriteLine("Insira um endereco");
+                    string endereco = Console.ReadLine();
+                    Console.WriteLine("Insira um email");
+                    string email = Console.ReadLine();
+                    Console.WriteLine("Insira um CPF");
+                    string Cpf = Console.ReadLine();
+                    Fisica fis = new Fisica(nome, endereco, email);
+                    fis.Cpf = Cpf;
+                    agenda.Add(fis);
                 }
-                catch (Exception)
+                else
                 {
-                    Console.WriteLine("Imóvel inválido!");
+
                 }
-                Console.ReadKey();
-                Console.Clear();
             }
         }
     }
