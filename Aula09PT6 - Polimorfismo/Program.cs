@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Aula09PT6___Polimorfismo
 {
@@ -121,171 +122,171 @@ namespace Aula09PT6___Polimorfismo
             //    }
             //}
 
-            //02c
-            Assistente ass = new Assistente("NomeAssistente", 2000);
-            Tecnico tec = new Tecnico("NomeTecnico", 3000);
-            Administrativo adm = new Administrativo("NomeAdministrativo", 3000);
+            ////02c
+            //Assistente ass = new Assistente("NomeAssistente", 2000);
+            //Tecnico tec = new Tecnico("NomeTecnico", 3000);
+            //Administrativo adm = new Administrativo("NomeAdministrativo", 3000);
 
-            ass.NumMatricula = 0;
-            tec.NumMatricula = 1;
-            adm.NumMatricula = 2;
+            //ass.NumMatricula = 0;
+            //tec.NumMatricula = 1;
+            //adm.NumMatricula = 2;
 
-            tec.BonusSalarial = 500;
-            adm.Turno = true;
-            adm.AdicionalNoturno = 400;
+            //tec.BonusSalarial = 500;
+            //adm.Turno = true;
+            //adm.AdicionalNoturno = 400;
 
-            List<Assistente> funcs = new List<Assistente>();
-            funcs.Add(adm);
-            funcs.Add(tec);
-            funcs.Add(ass);
+            //List<Assistente> funcs = new List<Assistente>();
+            //funcs.Add(adm);
+            //funcs.Add(tec);
+            //funcs.Add(ass);
 
-            while (true)
-            {
-                Console.WriteLine("O que você deseja fazer?");
-                Console.WriteLine("1 - Alterar");
-                Console.WriteLine("2 - Excluir");
-                Console.WriteLine("3 - Sair");
-                int x = int.Parse(Console.ReadLine());
-                if (x == 1)
-                {
-                    Console.WriteLine("Escolha o ID de um funcionário para alterar");
-                    for (int i = 0; i < funcs.Count; i++)
-                    {
-                        Console.WriteLine("Id: " + (i + 1));
-                        funcs[i].ExibeDados();
-                    }
+            //while (true)
+            //{
+            //    Console.WriteLine("O que você deseja fazer?");
+            //    Console.WriteLine("1 - Alterar");
+            //    Console.WriteLine("2 - Excluir");
+            //    Console.WriteLine("3 - Sair");
+            //    int x = int.Parse(Console.ReadLine());
+            //    if (x == 1)
+            //    {
+            //        Console.WriteLine("Escolha o ID de um funcionário para alterar");
+            //        for (int i = 0; i < funcs.Count; i++)
+            //        {
+            //            Console.WriteLine("Id: " + (i + 1));
+            //            funcs[i].ExibeDados();
+            //        }
 
-                    Console.WriteLine("---------------------------");
+            //        Console.WriteLine("---------------------------");
 
-                    x = int.Parse(Console.ReadLine());
-                    x--;
+            //        x = int.Parse(Console.ReadLine());
+            //        x--;
 
-                    if (funcs[x].NumMatricula == 1)
-                    {
-                        tec.ExibeDados();
-                        Console.WriteLine("Qual dado você deseja alterar?");
-                        Console.WriteLine("1 - Nome");
-                        Console.WriteLine("2 - Salario");
-                        Console.WriteLine("3 - NumMatricula");
-                        Console.WriteLine("4 - Bonus Salarial");
-                        x = int.Parse(Console.ReadLine());
-                        if (x == 1)
-                        {
-                            string nome = Console.ReadLine();
-                            tec.Nome = nome;
-                        }
-                        else if (x == 2)
-                        {
-                            double salario = double.Parse(Console.ReadLine());
-                            tec.Salario = salario;
-                        }
-                        else if (x == 3)
-                        {
-                            int matricula = int.Parse(Console.ReadLine());
-                            tec.NumMatricula = matricula;
-                        }
-                        else
-                        {
-                            double bonus = double.Parse(Console.ReadLine());
-                            tec.BonusSalarial = bonus;
-                        }
-                    }
-                    else if (funcs[x].NumMatricula == 2)
-                    {
-                        adm.ExibeDados();
-                        Console.WriteLine("Qual dado você deseja alterar?");
-                        Console.WriteLine("1 - Nome");
-                        Console.WriteLine("2 - Salario");
-                        Console.WriteLine("3 - NumMatricula");
-                        Console.WriteLine("4 - Adicional turno");
-                        Console.WriteLine("5 - Turno");
-                        x = int.Parse(Console.ReadLine());
-                        if (x == 1)
-                        {
-                            string nome = Console.ReadLine();
-                            adm.Nome = nome;
-                        }
-                        else if (x == 2)
-                        {
-                            double salario = double.Parse(Console.ReadLine());
-                            adm.Salario = salario;
-                        }
-                        else if (x == 3)
-                        {
-                            int matricula = int.Parse(Console.ReadLine());
-                            adm.NumMatricula = matricula;
-                        }
-                        else if (x == 4)
-                        {
-                            double adicional = double.Parse(Console.ReadLine());
-                            adm.AdicionalNoturno = adicional;
-                        }
-                        else
-                        {
-                            int turno = int.Parse(Console.ReadLine());
-                            if (turno == 1)
-                            {
-                                adm.Turno = true;
-                            }
-                            else
-                            {
-                                adm.Turno = false;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        ass.ExibeDados();
-                        Console.WriteLine("Qual dado você deseja alterar?");
-                        Console.WriteLine("1 - Nome");
-                        Console.WriteLine("2 - Salario");
-                        Console.WriteLine("3 - NumMatricula");
-                        x = int.Parse(Console.ReadLine());
-                        if (x == 1)
-                        {
-                            string nome = Console.ReadLine();
-                            ass.Nome = nome;
-                        }
-                        else if (x == 2)
-                        {
-                            double salario = double.Parse(Console.ReadLine());
-                            ass.Salario = salario;
-                        }
-                        else if (x == 3)
-                        {
-                            int matricula = int.Parse(Console.ReadLine());
-                            ass.NumMatricula = matricula;
-                        }
-                    }
+            //        if (funcs[x].NumMatricula == 1)
+            //        {
+            //            tec.ExibeDados();
+            //            Console.WriteLine("Qual dado você deseja alterar?");
+            //            Console.WriteLine("1 - Nome");
+            //            Console.WriteLine("2 - Salario");
+            //            Console.WriteLine("3 - NumMatricula");
+            //            Console.WriteLine("4 - Bonus Salarial");
+            //            x = int.Parse(Console.ReadLine());
+            //            if (x == 1)
+            //            {
+            //                string nome = Console.ReadLine();
+            //                tec.Nome = nome;
+            //            }
+            //            else if (x == 2)
+            //            {
+            //                double salario = double.Parse(Console.ReadLine());
+            //                tec.Salario = salario;
+            //            }
+            //            else if (x == 3)
+            //            {
+            //                int matricula = int.Parse(Console.ReadLine());
+            //                tec.NumMatricula = matricula;
+            //            }
+            //            else
+            //            {
+            //                double bonus = double.Parse(Console.ReadLine());
+            //                tec.BonusSalarial = bonus;
+            //            }
+            //        }
+            //        else if (funcs[x].NumMatricula == 2)
+            //        {
+            //            adm.ExibeDados();
+            //            Console.WriteLine("Qual dado você deseja alterar?");
+            //            Console.WriteLine("1 - Nome");
+            //            Console.WriteLine("2 - Salario");
+            //            Console.WriteLine("3 - NumMatricula");
+            //            Console.WriteLine("4 - Adicional turno");
+            //            Console.WriteLine("5 - Turno");
+            //            x = int.Parse(Console.ReadLine());
+            //            if (x == 1)
+            //            {
+            //                string nome = Console.ReadLine();
+            //                adm.Nome = nome;
+            //            }
+            //            else if (x == 2)
+            //            {
+            //                double salario = double.Parse(Console.ReadLine());
+            //                adm.Salario = salario;
+            //            }
+            //            else if (x == 3)
+            //            {
+            //                int matricula = int.Parse(Console.ReadLine());
+            //                adm.NumMatricula = matricula;
+            //            }
+            //            else if (x == 4)
+            //            {
+            //                double adicional = double.Parse(Console.ReadLine());
+            //                adm.AdicionalNoturno = adicional;
+            //            }
+            //            else
+            //            {
+            //                int turno = int.Parse(Console.ReadLine());
+            //                if (turno == 1)
+            //                {
+            //                    adm.Turno = true;
+            //                }
+            //                else
+            //                {
+            //                    adm.Turno = false;
+            //                }
+            //            }
+            //        }
+            //        else
+            //        {
+            //            ass.ExibeDados();
+            //            Console.WriteLine("Qual dado você deseja alterar?");
+            //            Console.WriteLine("1 - Nome");
+            //            Console.WriteLine("2 - Salario");
+            //            Console.WriteLine("3 - NumMatricula");
+            //            x = int.Parse(Console.ReadLine());
+            //            if (x == 1)
+            //            {
+            //                string nome = Console.ReadLine();
+            //                ass.Nome = nome;
+            //            }
+            //            else if (x == 2)
+            //            {
+            //                double salario = double.Parse(Console.ReadLine());
+            //                ass.Salario = salario;
+            //            }
+            //            else if (x == 3)
+            //            {
+            //                int matricula = int.Parse(Console.ReadLine());
+            //                ass.NumMatricula = matricula;
+            //            }
+            //        }
 
-                }
-                else if (x == 2)
-                {
-                    Console.WriteLine("Escolha o ID de um funcionário para demitir");
-                    for (int i = 0; i < funcs.Count; i++)
-                    {
-                        Console.WriteLine("Id: " + (i + 1));
-                        funcs[i].ExibeDados();
-                    }
-                    x = int.Parse(Console.ReadLine());
-                    x--;
-                    try
-                    {
-                        funcs.RemoveAt(x);
-                    }
-                    catch (Exception)
-                    {
-                        Console.WriteLine("Funcionario inválido!");
-                    }
-                    Console.WriteLine("Funcionário demitido!");
-                }
-                else
-                {
-                    break;
-                }
-                Console.ReadKey();
-                Console.Clear();
-            }
+            //    }
+            //    else if (x == 2)
+            //    {
+            //        Console.WriteLine("Escolha o ID de um funcionário para demitir");
+            //        for (int i = 0; i < funcs.Count; i++)
+            //        {
+            //            Console.WriteLine("Id: " + (i + 1));
+            //            funcs[i].ExibeDados();
+            //        }
+            //        x = int.Parse(Console.ReadLine());
+            //        x--;
+            //        try
+            //        {
+            //            funcs.RemoveAt(x);
+            //        }
+            //        catch (Exception)
+            //        {
+            //            Console.WriteLine("Funcionario inválido!");
+            //        }
+            //        Console.WriteLine("Funcionário demitido!");
+            //    }
+            //    else
+            //    {
+            //        break;
+            //    }
+            //    Console.ReadKey();
+            //    Console.Clear();
+            //}
 
             ////03
             //Cliente cli = new Cliente("Nome", 2500);
@@ -348,31 +349,156 @@ namespace Aula09PT6___Polimorfismo
             //}
 
             //Lista02
-            ////1
-            //List<Pessoa> agenda = new List<Pessoa>();
-            //while (true)
-            //{
-            //    Console.WriteLine("Digite 1 para PF ou 2 para PJ");
-            //    int escolha = int.Parse(Console.ReadLine());
-            //    if (escolha == 1)
-            //    {
-            //        Console.WriteLine("Insira um nome");
-            //        string nome = Console.ReadLine();
-            //        Console.WriteLine("Insira um endereco");
-            //        string endereco = Console.ReadLine();
-            //        Console.WriteLine("Insira um email");
-            //        string email = Console.ReadLine();
-            //        Console.WriteLine("Insira um CPF");
-            //        string Cpf = Console.ReadLine();
-            //        Fisica fis = new Fisica(nome, endereco, email);
-            //        fis.Cpf = Cpf;
-            //        agenda.Add(fis);
-            //    }
-            //    else
-            //    {
-
-            //    }
-            //}
+            //1
+            List<Agenda> agenda = new List<Agenda>();
+            List<Fisica> agFis = new List<Fisica>();
+            List<Juridica> agJur = new List<Juridica>();
+            while (true)
+            {
+                List<Fisica> a = new List<Fisica>();
+                Fisica fis = new Fisica();
+                Juridica jur = new Juridica();
+                Console.WriteLine("O que você deseja fazer?");
+                Console.WriteLine("1 - Adicionar");
+                Console.WriteLine("2 - Pesquisar");
+                Console.WriteLine("3 - Remover");
+                Console.WriteLine("4 - Mostrar todos");
+                string escolha = Console.ReadLine();
+                if (escolha == "1")
+                {
+                    Console.WriteLine("Você quer adicionar uma PF ou uma PJ?");
+                    Console.WriteLine("1 - PF // 2 - PJ");
+                    escolha = Console.ReadLine();
+                    if (escolha == "1")
+                    {
+                        fis.Nome = Console.ReadLine();
+                        fis.Cpf = Console.ReadLine();
+                        fis.Endereco = Console.ReadLine();
+                        fis.Email = Console.ReadLine();
+                        agenda.Add(fis);
+                    }
+                    else if (escolha == "2")
+                    {
+                        jur.Nome = Console.ReadLine();
+                        jur.Cnpj = Console.ReadLine();
+                        jur.Endereco = Console.ReadLine();
+                        jur.Email = Console.ReadLine();
+                        agenda.Add(jur);
+                    }
+                    agJur.Add(jur);
+                    agFis.Add(fis);
+                }
+                else if (escolha == "2")
+                {
+                    Console.WriteLine("Você quer pesquisar uma PF ou uma PJ?");
+                    Console.WriteLine("1 - PF // 2 - PJ");
+                    escolha = Console.ReadLine();
+                    if (escolha == "1")
+                    {
+                        Console.WriteLine("Insira o nome e / ou o CPF");
+                        fis.Nome = Console.ReadLine();
+                        fis.Cpf = Console.ReadLine();
+                        for (int i = 0; i < agenda.Count; i++)
+                        {
+                            if (fis.Cpf == agFis[i].Cpf || agenda[i].Nome == fis.Nome)
+                            {
+                                if (fis.Cpf != null)
+                                {
+                                    Console.WriteLine(agFis[i].Nome);
+                                    Console.WriteLine(agFis[i].Cpf);
+                                    Console.WriteLine(agFis[i].Email);
+                                }
+                            }
+                        }
+                    }
+                    else if (escolha == "2")
+                    {
+                        Console.WriteLine("Insira o nome e / ou o CNPJ");
+                        jur.Nome = Console.ReadLine();
+                        jur.Cnpj = Console.ReadLine();
+                        for (int i = 0; i < agenda.Count; i++)
+                        {
+                            if (jur.Cnpj == agJur[i].Cnpj || agenda[i].Nome == jur.Nome)
+                            {
+                                if (jur.Cnpj != null)
+                                {
+                                    Console.WriteLine(agJur[i].Nome);
+                                    Console.WriteLine(agJur[i].Cnpj);
+                                    Console.WriteLine(agJur[i].Email);
+                                }
+                            }
+                        }
+                    }
+                }
+                else if (escolha == "3")
+                {
+                    Console.WriteLine("Você quer remover uma PF ou uma PJ?");
+                    Console.WriteLine("1 - PF // 2 - PJ");
+                    escolha = Console.ReadLine();
+                    if (escolha == "1")
+                    {
+                        Console.WriteLine("Insira o nome e / ou o CPF");
+                        fis.Nome = Console.ReadLine();
+                        fis.Cpf = Console.ReadLine();
+                        for (int i = 0; i < agenda.Count; i++)
+                        {
+                            if (fis.Cpf == agFis[i].Cpf || agenda[i].Nome == fis.Nome)
+                            {
+                                agenda.RemoveAt(i);
+                                for (int j = 0; j < agFis.Count; j++)
+                                {
+                                    if (fis.Cpf == agFis[j].Cpf || agenda[i].Nome == fis.Nome)
+                                    {
+                                        agFis.RemoveAt(j);
+                                        Console.WriteLine("Item removido");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else if (escolha == "2")
+                    {
+                        Console.WriteLine("Insira o nome e / ou o CNPJ");
+                        jur.Nome = Console.ReadLine();
+                        jur.Cnpj = Console.ReadLine();
+                        for (int i = 0; i < agenda.Count; i++)
+                        {
+                            if (jur.Cnpj == agJur[i].Cnpj || agenda[i].Nome == jur.Nome)
+                            {
+                                agenda.RemoveAt(i);
+                                for (int j = 0; j < agJur.Count; j++)
+                                {
+                                    if (jur.Cnpj == agJur[j].Cnpj || agenda[i].Nome == jur.Nome)
+                                    {
+                                        agJur.RemoveAt(j);
+                                        Console.WriteLine("Item removido");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    List<Fisica> fisOrganizado = agFis.OrderBy(x => x.Cpf).ToList();
+                    foreach (var item in fisOrganizado)
+                    {
+                        if (item.Cpf != null)
+                        {
+                            Console.WriteLine(item.MostrarAgenda());
+                        }
+                    }
+                    List<Juridica> jurOrganizado = agJur.OrderBy(x => x.Cnpj).ToList();
+                    foreach (var item in jurOrganizado)
+                    {
+                        if (item.Cnpj != null)
+                        {
+                            Console.WriteLine(item.MostrarAgenda());
+                        }
+                    }
+                }
+                Console.Clear();
+            }
         }
     }
 }
