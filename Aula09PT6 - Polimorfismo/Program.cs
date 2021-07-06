@@ -348,156 +348,222 @@ namespace Aula09PT6___Polimorfismo
             //    Console.Clear();
             //}
 
-            //Lista02
-            //1
-            List<Agenda> agenda = new List<Agenda>();
-            List<Fisica> agFis = new List<Fisica>();
-            List<Juridica> agJur = new List<Juridica>();
+            ////Lista02
+            ////1
+            //List<Agenda> agenda = new List<Agenda>();
+            //List<Fisica> agFis = new List<Fisica>();
+            //List<Juridica> agJur = new List<Juridica>();
+            //while (true)
+            //{
+            //    List<Fisica> a = new List<Fisica>();
+            //    Fisica fis = new Fisica();
+            //    Juridica jur = new Juridica();
+            //    Console.WriteLine("O que você deseja fazer?");
+            //    Console.WriteLine("1 - Adicionar");
+            //    Console.WriteLine("2 - Pesquisar");
+            //    Console.WriteLine("3 - Remover");
+            //    Console.WriteLine("4 - Mostrar todos");
+            //    string escolha = Console.ReadLine();
+            //    if (escolha == "1")
+            //    {
+            //        Console.WriteLine("Você quer adicionar uma PF ou uma PJ?");
+            //        Console.WriteLine("1 - PF // 2 - PJ");
+            //        escolha = Console.ReadLine();
+            //        if (escolha == "1")
+            //        {
+            //            fis.Nome = Console.ReadLine();
+            //            fis.Cpf = Console.ReadLine();
+            //            fis.Endereco = Console.ReadLine();
+            //            fis.Email = Console.ReadLine();
+            //            agenda.Add(fis);
+            //        }
+            //        else if (escolha == "2")
+            //        {
+            //            jur.Nome = Console.ReadLine();
+            //            jur.Cnpj = Console.ReadLine();
+            //            jur.Endereco = Console.ReadLine();
+            //            jur.Email = Console.ReadLine();
+            //            agenda.Add(jur);
+            //        }
+            //        agJur.Add(jur);
+            //        agFis.Add(fis);
+            //    }
+            //    else if (escolha == "2")
+            //    {
+            //        Console.WriteLine("Você quer pesquisar uma PF ou uma PJ?");
+            //        Console.WriteLine("1 - PF // 2 - PJ");
+            //        escolha = Console.ReadLine();
+            //        if (escolha == "1")
+            //        {
+            //            Console.WriteLine("Insira o nome e / ou o CPF");
+            //            fis.Nome = Console.ReadLine();
+            //            fis.Cpf = Console.ReadLine();
+            //            for (int i = 0; i < agenda.Count; i++)
+            //            {
+            //                if (fis.Cpf == agFis[i].Cpf || agenda[i].Nome == fis.Nome)
+            //                {
+            //                    if (fis.Cpf != null)
+            //                    {
+            //                        Console.WriteLine(agFis[i].Nome);
+            //                        Console.WriteLine(agFis[i].Cpf);
+            //                        Console.WriteLine(agFis[i].Email);
+            //                    }
+            //                }
+            //            }
+            //        }
+            //        else if (escolha == "2")
+            //        {
+            //            Console.WriteLine("Insira o nome e / ou o CNPJ");
+            //            jur.Nome = Console.ReadLine();
+            //            jur.Cnpj = Console.ReadLine();
+            //            for (int i = 0; i < agenda.Count; i++)
+            //            {
+            //                if (jur.Cnpj == agJur[i].Cnpj || agenda[i].Nome == jur.Nome)
+            //                {
+            //                    if (jur.Cnpj != null)
+            //                    {
+            //                        Console.WriteLine(agJur[i].Nome);
+            //                        Console.WriteLine(agJur[i].Cnpj);
+            //                        Console.WriteLine(agJur[i].Email);
+            //                    }
+            //                }
+            //            }
+            //        }
+            //    }
+            //    else if (escolha == "3")
+            //    {
+            //        Console.WriteLine("Você quer remover uma PF ou uma PJ?");
+            //        Console.WriteLine("1 - PF // 2 - PJ");
+            //        escolha = Console.ReadLine();
+            //        if (escolha == "1")
+            //        {
+            //            Console.WriteLine("Insira o nome e / ou o CPF");
+            //            fis.Nome = Console.ReadLine();
+            //            fis.Cpf = Console.ReadLine();
+            //            for (int i = 0; i < agenda.Count; i++)
+            //            {
+            //                if (fis.Cpf == agFis[i].Cpf || agenda[i].Nome == fis.Nome)
+            //                {
+            //                    for (int j = 0; j < agFis.Count; j++)
+            //                    {
+            //                        if (fis.Cpf == agFis[j].Cpf || agenda[i].Nome == fis.Nome)
+            //                        {
+            //                            agFis.RemoveAt(j);
+            //                            agenda.RemoveAt(i);
+            //                            Console.WriteLine("Item removido");
+            //                        }
+            //                    }
+            //                }
+            //            }
+            //        }
+            //        else if (escolha == "2")
+            //        {
+            //            Console.WriteLine("Insira o nome e / ou o CNPJ");
+            //            jur.Nome = Console.ReadLine();
+            //            jur.Cnpj = Console.ReadLine();
+            //            for (int i = 0; i < agenda.Count; i++)
+            //            {
+            //                if (jur.Cnpj == agJur[i].Cnpj || agenda[i].Nome == jur.Nome)
+            //                {
+            //                    for (int j = 0; j < agJur.Count; j++)
+            //                    {
+            //                        if (jur.Cnpj == agJur[j].Cnpj || agenda[i].Nome == jur.Nome)
+            //                        {
+            //                            agJur.RemoveAt(j);
+            //                            agenda.RemoveAt(i);
+            //                            Console.WriteLine("Item removido");
+            //                        }
+            //                    }
+            //                }
+            //            }
+            //        }
+            //    }
+            //    else
+            //    {
+            //        List<Fisica> fisOrganizado = agFis.OrderBy(x => x.Cpf).ToList();
+            //        foreach (var item in fisOrganizado)
+            //        {
+            //            if (item.Cpf != null)
+            //            {
+            //                Console.WriteLine(item.MostrarAgenda());
+            //            }
+            //        }
+            //        List<Juridica> jurOrganizado = agJur.OrderBy(x => x.Cnpj).ToList();
+            //        foreach (var item in jurOrganizado)
+            //        {
+            //            if (item.Cnpj != null)
+            //            {
+            //                Console.WriteLine(item.MostrarAgenda());
+            //            }
+            //        }
+            //    }
+            //}
+
+            //02
+
             while (true)
             {
-                List<Fisica> a = new List<Fisica>();
-                Fisica fis = new Fisica();
-                Juridica jur = new Juridica();
-                Console.WriteLine("O que você deseja fazer?");
-                Console.WriteLine("1 - Adicionar");
-                Console.WriteLine("2 - Pesquisar");
-                Console.WriteLine("3 - Remover");
-                Console.WriteLine("4 - Mostrar todos");
-                string escolha = Console.ReadLine();
-                if (escolha == "1")
+                List<Produto> produtos = new List<Produto>();
+                Mouse mouse = new Mouse();
+                Livro livro = new Livro();
+
+                mouse.Dpi = 150;
+                mouse.Modelo = "Modelo Mouse Doméstico";
+                mouse.Nome = "Nome Mouse Doméstico";
+                mouse.Preco = 100;
+                mouse.Tipo = "Doméstico";
+                produtos.Add(mouse);
+                mouse = new Mouse();
+
+                mouse.Dpi = 100;
+                mouse.Modelo = "Modelo Mouse";
+                mouse.Nome = "Nome Mouse";
+                mouse.Preco = 50;
+                mouse.Tipo = "Gamer";
+                produtos.Add(mouse);
+
+                livro.Autor = "Autor livro";
+                livro.Estilo = "Estilo livro";
+                livro.Nome = "Nome livro";
+                livro.Preco = 60;
+                livro.Tipo = "Tipo livro";
+                produtos.Add(livro);
+                livro = new Livro();
+
+                livro.Autor = "Autor livro 2";
+                livro.Estilo = "Estilo livro 2";
+                livro.Nome = "Nome livro 2";
+                livro.Preco = 600;
+                livro.Tipo = "Tipo livro 2";
+                produtos.Add(livro);
+
+                Console.WriteLine("Itens disponíveis:");
+                for (int i = 0; i < produtos.Count; i++)
                 {
-                    Console.WriteLine("Você quer adicionar uma PF ou uma PJ?");
-                    Console.WriteLine("1 - PF // 2 - PJ");
-                    escolha = Console.ReadLine();
-                    if (escolha == "1")
-                    {
-                        fis.Nome = Console.ReadLine();
-                        fis.Cpf = Console.ReadLine();
-                        fis.Endereco = Console.ReadLine();
-                        fis.Email = Console.ReadLine();
-                        agenda.Add(fis);
-                    }
-                    else if (escolha == "2")
-                    {
-                        jur.Nome = Console.ReadLine();
-                        jur.Cnpj = Console.ReadLine();
-                        jur.Endereco = Console.ReadLine();
-                        jur.Email = Console.ReadLine();
-                        agenda.Add(jur);
-                    }
-                    agJur.Add(jur);
-                    agFis.Add(fis);
+                    Console.Write("Item {0} =>", i + 1);
+                    Console.WriteLine(produtos[i].CalculaPreco());
                 }
-                else if (escolha == "2")
+                List<int> carrinho = new List<int>();
+                while (true)
                 {
-                    Console.WriteLine("Você quer pesquisar uma PF ou uma PJ?");
-                    Console.WriteLine("1 - PF // 2 - PJ");
-                    escolha = Console.ReadLine();
-                    if (escolha == "1")
+                    Console.WriteLine("Qual item você deseja?");
+                    Console.WriteLine("Caso insira 0, será encerrada a compra");
+                    int escolha = int.Parse(Console.ReadLine());
+                    if (escolha == 0)
                     {
-                        Console.WriteLine("Insira o nome e / ou o CPF");
-                        fis.Nome = Console.ReadLine();
-                        fis.Cpf = Console.ReadLine();
-                        for (int i = 0; i < agenda.Count; i++)
-                        {
-                            if (fis.Cpf == agFis[i].Cpf || agenda[i].Nome == fis.Nome)
-                            {
-                                if (fis.Cpf != null)
-                                {
-                                    Console.WriteLine(agFis[i].Nome);
-                                    Console.WriteLine(agFis[i].Cpf);
-                                    Console.WriteLine(agFis[i].Email);
-                                }
-                            }
-                        }
+                        break;
                     }
-                    else if (escolha == "2")
-                    {
-                        Console.WriteLine("Insira o nome e / ou o CNPJ");
-                        jur.Nome = Console.ReadLine();
-                        jur.Cnpj = Console.ReadLine();
-                        for (int i = 0; i < agenda.Count; i++)
-                        {
-                            if (jur.Cnpj == agJur[i].Cnpj || agenda[i].Nome == jur.Nome)
-                            {
-                                if (jur.Cnpj != null)
-                                {
-                                    Console.WriteLine(agJur[i].Nome);
-                                    Console.WriteLine(agJur[i].Cnpj);
-                                    Console.WriteLine(agJur[i].Email);
-                                }
-                            }
-                        }
-                    }
+                    escolha--;
+                    carrinho.Add(escolha);
                 }
-                else if (escolha == "3")
+                double precoCompra = 0;
+                foreach (var item in carrinho)
                 {
-                    Console.WriteLine("Você quer remover uma PF ou uma PJ?");
-                    Console.WriteLine("1 - PF // 2 - PJ");
-                    escolha = Console.ReadLine();
-                    if (escolha == "1")
-                    {
-                        Console.WriteLine("Insira o nome e / ou o CPF");
-                        fis.Nome = Console.ReadLine();
-                        fis.Cpf = Console.ReadLine();
-                        for (int i = 0; i < agenda.Count; i++)
-                        {
-                            if (fis.Cpf == agFis[i].Cpf || agenda[i].Nome == fis.Nome)
-                            {
-                                agenda.RemoveAt(i);
-                                for (int j = 0; j < agFis.Count; j++)
-                                {
-                                    if (fis.Cpf == agFis[j].Cpf || agenda[i].Nome == fis.Nome)
-                                    {
-                                        agFis.RemoveAt(j);
-                                        Console.WriteLine("Item removido");
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    else if (escolha == "2")
-                    {
-                        Console.WriteLine("Insira o nome e / ou o CNPJ");
-                        jur.Nome = Console.ReadLine();
-                        jur.Cnpj = Console.ReadLine();
-                        for (int i = 0; i < agenda.Count; i++)
-                        {
-                            if (jur.Cnpj == agJur[i].Cnpj || agenda[i].Nome == jur.Nome)
-                            {
-                                agenda.RemoveAt(i);
-                                for (int j = 0; j < agJur.Count; j++)
-                                {
-                                    if (jur.Cnpj == agJur[j].Cnpj || agenda[i].Nome == jur.Nome)
-                                    {
-                                        agJur.RemoveAt(j);
-                                        Console.WriteLine("Item removido");
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    Console.WriteLine(produtos[item].CalculaPreco());
+                    precoCompra += produtos[item].Preco;
                 }
-                else
-                {
-                    List<Fisica> fisOrganizado = agFis.OrderBy(x => x.Cpf).ToList();
-                    foreach (var item in fisOrganizado)
-                    {
-                        if (item.Cpf != null)
-                        {
-                            Console.WriteLine(item.MostrarAgenda());
-                        }
-                    }
-                    List<Juridica> jurOrganizado = agJur.OrderBy(x => x.Cnpj).ToList();
-                    foreach (var item in jurOrganizado)
-                    {
-                        if (item.Cnpj != null)
-                        {
-                            Console.WriteLine(item.MostrarAgenda());
-                        }
-                    }
-                }
-                Console.Clear();
+                Console.WriteLine("Preço final da compra: {0:c}", precoCompra);
+                Console.ReadKey();
             }
         }
     }
