@@ -12,32 +12,29 @@ namespace Aula09PT6___Polimorfismo
         public string Endereco { get; set; }
         public string Email { get; set; }
 
-        public virtual string MostrarAgenda()
+        public virtual void MostrarAgenda()
         {
             Console.WriteLine("Nome: " + Nome);
             Console.WriteLine("Endereço: " + Endereco);
             Console.WriteLine("Email: " + Email);
-            return null;
         }
     }
     class Fisica : Agenda
     {
         public string Cpf { get; set; }
-        public override string MostrarAgenda()
+        public override void MostrarAgenda()
         {
             base.MostrarAgenda();
             Console.WriteLine("CPF: " + Cpf);
-            return null;
         }
     }
     class Juridica : Agenda
     {
         public string Cnpj { get; set; }
-        public override string MostrarAgenda()
+        public override void MostrarAgenda()
         {
             base.MostrarAgenda();
             Console.WriteLine("CNPJ: " + Cnpj);
-            return null;
         }
     }
 }

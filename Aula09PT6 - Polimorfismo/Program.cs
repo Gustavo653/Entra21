@@ -485,7 +485,7 @@ namespace Aula09PT6___Polimorfismo
             //        {
             //            if (item.Cpf != null)
             //            {
-            //                Console.WriteLine(item.MostrarAgenda());
+            //                item.MostrarAgenda();
             //            }
             //        }
             //        List<Juridica> jurOrganizado = agJur.OrderBy(x => x.Cnpj).ToList();
@@ -493,78 +493,78 @@ namespace Aula09PT6___Polimorfismo
             //        {
             //            if (item.Cnpj != null)
             //            {
-            //                Console.WriteLine(item.MostrarAgenda());
+            //                item.MostrarAgenda();
             //            }
             //        }
             //    }
+            //    }
+
+            ////02
+
+            //while (true)
+            //{
+            //    List<Produto> produtos = new List<Produto>();
+            //    Mouse mouse = new Mouse();
+            //    Livro livro = new Livro();
+
+            //    mouse.Dpi = 150;
+            //    mouse.Modelo = "Modelo Mouse Doméstico";
+            //    mouse.Nome = "Nome Mouse Doméstico";
+            //    mouse.Preco = 100;
+            //    mouse.Tipo = "Doméstico";
+            //    produtos.Add(mouse);
+            //    mouse = new Mouse();
+
+            //    mouse.Dpi = 100;
+            //    mouse.Modelo = "Modelo Mouse";
+            //    mouse.Nome = "Nome Mouse";
+            //    mouse.Preco = 50;
+            //    mouse.Tipo = "Gamer";
+            //    produtos.Add(mouse);
+
+            //    livro.Autor = "Autor livro";
+            //    livro.Estilo = "Estilo livro";
+            //    livro.Nome = "Nome livro";
+            //    livro.Preco = 60;
+            //    livro.Tipo = "Tipo livro";
+            //    produtos.Add(livro);
+            //    livro = new Livro();
+
+            //    livro.Autor = "Autor livro 2";
+            //    livro.Estilo = "Estilo livro 2";
+            //    livro.Nome = "Nome livro 2";
+            //    livro.Preco = 600;
+            //    livro.Tipo = "Tipo livro 2";
+            //    produtos.Add(livro);
+
+            //    Console.WriteLine("Itens disponíveis:");
+            //    for (int i = 0; i < produtos.Count; i++)
+            //    {
+            //        Console.Write("Item {0} =>", i + 1);
+            //        produtos[i].CalculaPreco();
+            //    }
+            //    List<int> carrinho = new List<int>();
+            //    while (true)
+            //    {
+            //        Console.WriteLine("Qual item você deseja?");
+            //        Console.WriteLine("Caso insira 0, será encerrada a compra");
+            //        int escolha = int.Parse(Console.ReadLine());
+            //        if (escolha == 0)
+            //        {
+            //            break;
+            //        }
+            //        escolha--;
+            //        carrinho.Add(escolha);
+            //    }
+            //    double precoCompra = 0;
+            //    foreach (var item in carrinho)
+            //    {
+            //        produtos[item].CalculaPreco();
+            //        precoCompra += produtos[item].Preco;
+            //    }
+            //    Console.WriteLine("Preço final da compra: {0:c}", precoCompra);
+            //    Console.ReadKey();
             //}
-
-            //02
-
-            while (true)
-            {
-                List<Produto> produtos = new List<Produto>();
-                Mouse mouse = new Mouse();
-                Livro livro = new Livro();
-
-                mouse.Dpi = 150;
-                mouse.Modelo = "Modelo Mouse Doméstico";
-                mouse.Nome = "Nome Mouse Doméstico";
-                mouse.Preco = 100;
-                mouse.Tipo = "Doméstico";
-                produtos.Add(mouse);
-                mouse = new Mouse();
-
-                mouse.Dpi = 100;
-                mouse.Modelo = "Modelo Mouse";
-                mouse.Nome = "Nome Mouse";
-                mouse.Preco = 50;
-                mouse.Tipo = "Gamer";
-                produtos.Add(mouse);
-
-                livro.Autor = "Autor livro";
-                livro.Estilo = "Estilo livro";
-                livro.Nome = "Nome livro";
-                livro.Preco = 60;
-                livro.Tipo = "Tipo livro";
-                produtos.Add(livro);
-                livro = new Livro();
-
-                livro.Autor = "Autor livro 2";
-                livro.Estilo = "Estilo livro 2";
-                livro.Nome = "Nome livro 2";
-                livro.Preco = 600;
-                livro.Tipo = "Tipo livro 2";
-                produtos.Add(livro);
-
-                Console.WriteLine("Itens disponíveis:");
-                for (int i = 0; i < produtos.Count; i++)
-                {
-                    Console.Write("Item {0} =>", i + 1);
-                    Console.WriteLine(produtos[i].CalculaPreco());
-                }
-                List<int> carrinho = new List<int>();
-                while (true)
-                {
-                    Console.WriteLine("Qual item você deseja?");
-                    Console.WriteLine("Caso insira 0, será encerrada a compra");
-                    int escolha = int.Parse(Console.ReadLine());
-                    if (escolha == 0)
-                    {
-                        break;
-                    }
-                    escolha--;
-                    carrinho.Add(escolha);
-                }
-                double precoCompra = 0;
-                foreach (var item in carrinho)
-                {
-                    Console.WriteLine(produtos[item].CalculaPreco());
-                    precoCompra += produtos[item].Preco;
-                }
-                Console.WriteLine("Preço final da compra: {0:c}", precoCompra);
-                Console.ReadKey();
-            }
         }
     }
 }
