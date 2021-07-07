@@ -355,7 +355,8 @@ namespace Aula09PT6___Polimorfismo
             //List<Juridica> agJur = new List<Juridica>();
             //while (true)
             //{
-            //    List<Fisica> a = new List<Fisica>();
+            //    List<Fisica> a = new List<Fisica>(); //Talvez não precisa
+
             //    Fisica fis = new Fisica();
             //    Juridica jur = new Juridica();
             //    Console.WriteLine("O que você deseja fazer?");
@@ -480,6 +481,7 @@ namespace Aula09PT6___Polimorfismo
             //    }
             //    else
             //    {
+            //        Console.WriteLine("CPF");
             //        List<Fisica> fisOrganizado = agFis.OrderBy(x => x.Cpf).ToList();
             //        foreach (var item in fisOrganizado)
             //        {
@@ -488,6 +490,7 @@ namespace Aula09PT6___Polimorfismo
             //                item.MostrarAgenda();
             //            }
             //        }
+            //        Console.WriteLine("CNPJ");
             //        List<Juridica> jurOrganizado = agJur.OrderBy(x => x.Cnpj).ToList();
             //        foreach (var item in jurOrganizado)
             //        {
@@ -497,7 +500,7 @@ namespace Aula09PT6___Polimorfismo
             //            }
             //        }
             //    }
-            //    }
+            //}
 
             ////02
 
@@ -565,6 +568,76 @@ namespace Aula09PT6___Polimorfismo
             //    Console.WriteLine("Preço final da compra: {0:c}", precoCompra);
             //    Console.ReadKey();
             //}
+
+            //Lista03Lista03Lista03Lista03Lista03Lista03Lista03Lista03Lista03Lista03Lista03
+            //01
+            List<Transacao> listaTransacoesConta = new List<Transacao>();
+            for (int i = 0; i < 5; i++)
+            {
+                Random ran = new Random();
+                Transacao transacao = new Transacao();
+                transacao.DataTransacao = ""+i;
+                transacao.ValorTransacao = ran.Next(1, 1501);
+                listaTransacoesConta.Add(transacao);
+            }
+            List<Transacao> listaTransacoesPoupanca = new List<Transacao>();
+            for (int i = 0; i < 5; i++)
+            {
+                Random ran = new Random();
+                Transacao transacao = new Transacao();
+                transacao.DataTransacao = "" + i;
+                transacao.ValorTransacao = ran.Next(1, 1501);
+                listaTransacoesConta.Add(transacao);
+            }
+            List<Transacao> listaTransacoesLimite = new List<Transacao>();
+            for (int i = 0; i < 5; i++)
+            {
+                Random ran = new Random();
+                Transacao transacao = new Transacao();
+                transacao.DataTransacao = "" + i;
+                transacao.ValorTransacao = ran.Next(1, 1501);
+                listaTransacoesConta.Add(transacao);
+            }
+
+            Conta conta = new Conta();
+            Poupanca poupanca = new Poupanca();
+            Limite limite = new Limite();
+            conta.Nome = "Conta normal";
+            conta.NumeroConta = 1234;
+            conta.Saldo = 2000;
+            conta.Transacoes = listaTransacoesConta;
+            conta.Deposito();
+            Console.WriteLine();
+            conta.ImpressaoExtrato();
+            Console.WriteLine();
+            conta.Retirada();
+            Console.WriteLine();
+            conta.ExibirDados();
+            
+            Console.ReadKey();
+            Console.Clear();
+
+            poupanca.DiaAniversario = 2;
+            poupanca.Nome = "Conta poupança";
+            poupanca.NumeroConta = 4312;
+            poupanca.Saldo = 1000;
+            poupanca.Transacoes = listaTransacoesPoupanca;
+            poupanca.Retirada();
+            poupanca.ImpressaoExtrato();
+            poupanca.ExibirDados();
+            poupanca.Deposito();
+            
+            Console.ReadKey();
+            Console.Clear();
+            limite.Nome = "Conta limite";
+            limite.NumeroConta = 235432;
+            limite.Saldo = 1500;
+            limite.Transacoes = listaTransacoesLimite;
+            limite.ValorLimite = 500;
+            limite.ImpressaoExtrato();
+            limite.Deposito();
+            limite.Retirada();
+            limite.ExibirDados();
         }
     }
 }
