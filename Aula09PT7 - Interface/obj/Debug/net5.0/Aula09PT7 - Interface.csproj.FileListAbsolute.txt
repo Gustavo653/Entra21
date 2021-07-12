@@ -1,0 +1,16 @@
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\bin\Debug\net5.0\Aula09PT7 - Interface.exe
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\bin\Debug\net5.0\Aula09PT7 - Interface.deps.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\bin\Debug\net5.0\Aula09PT7 - Interface.runtimeconfig.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\bin\Debug\net5.0\Aula09PT7 - Interface.runtimeconfig.dev.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\bin\Debug\net5.0\Aula09PT7 - Interface.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\bin\Debug\net5.0\ref\Aula09PT7 - Interface.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\bin\Debug\net5.0\Aula09PT7 - Interface.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\obj\Debug\net5.0\Aula09PT7 - Interface.csprojAssemblyReference.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\obj\Debug\net5.0\Aula09PT7 - Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\obj\Debug\net5.0\Aula09PT7 - Interface.AssemblyInfoInputs.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\obj\Debug\net5.0\Aula09PT7 - Interface.AssemblyInfo.cs
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\obj\Debug\net5.0\Aula09PT7 - Interface.csproj.CoreCompileInputs.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\obj\Debug\net5.0\Aula09PT7 - Interface.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\obj\Debug\net5.0\ref\Aula09PT7 - Interface.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\obj\Debug\net5.0\Aula09PT7 - Interface.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT7 - Interface\obj\Debug\net5.0\Aula09PT7 - Interface.genruntimeconfig.cache
