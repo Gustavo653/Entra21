@@ -1,0 +1,16 @@
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\bin\Debug\net5.0\Aula09PT8 - EnumELambda.exe
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\bin\Debug\net5.0\Aula09PT8 - EnumELambda.deps.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\bin\Debug\net5.0\Aula09PT8 - EnumELambda.runtimeconfig.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\bin\Debug\net5.0\Aula09PT8 - EnumELambda.runtimeconfig.dev.json
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\bin\Debug\net5.0\Aula09PT8 - EnumELambda.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\bin\Debug\net5.0\ref\Aula09PT8 - EnumELambda.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\bin\Debug\net5.0\Aula09PT8 - EnumELambda.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\obj\Debug\net5.0\Aula09PT8 - EnumELambda.csprojAssemblyReference.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\obj\Debug\net5.0\Aula09PT8 - EnumELambda.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\obj\Debug\net5.0\Aula09PT8 - EnumELambda.AssemblyInfoInputs.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\obj\Debug\net5.0\Aula09PT8 - EnumELambda.AssemblyInfo.cs
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\obj\Debug\net5.0\Aula09PT8 - EnumELambda.csproj.CoreCompileInputs.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\obj\Debug\net5.0\Aula09PT8 - EnumELambda.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\obj\Debug\net5.0\ref\Aula09PT8 - EnumELambda.dll
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\obj\Debug\net5.0\Aula09PT8 - EnumELambda.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula09PT8 - EnumELambda\obj\Debug\net5.0\Aula09PT8 - EnumELambda.genruntimeconfig.cache
