@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gustavo.silva22\\Desktop\\Entra21\\AulaPT10 - Banco de dados\\AulaPT10 - Banco de dados.csproj": {}
+    "C:\\Users\\ujipe\\Desktop\\Entra21\\AulaPT10 - Banco de dados\\AulaPT10 - Banco de dados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gustavo.silva22\\Desktop\\Entra21\\AulaPT10 - Banco de dados\\AulaPT10 - Banco de dados.csproj": {
+    "C:\\Users\\ujipe\\Desktop\\Entra21\\AulaPT10 - Banco de dados\\AulaPT10 - Banco de dados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gustavo.silva22\\Desktop\\Entra21\\AulaPT10 - Banco de dados\\AulaPT10 - Banco de dados.csproj",
+        "projectUniqueName": "C:\\Users\\ujipe\\Desktop\\Entra21\\AulaPT10 - Banco de dados\\AulaPT10 - Banco de dados.csproj",
         "projectName": "AulaPT10 - Banco de dados",
-        "projectPath": "C:\\Users\\gustavo.silva22\\Desktop\\Entra21\\AulaPT10 - Banco de dados\\AulaPT10 - Banco de dados.csproj",
-        "packagesPath": "C:\\Users\\gustavo.silva22\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gustavo.silva22\\Desktop\\Entra21\\AulaPT10 - Banco de dados\\obj\\",
+        "projectPath": "C:\\Users\\ujipe\\Desktop\\Entra21\\AulaPT10 - Banco de dados\\AulaPT10 - Banco de dados.csproj",
+        "packagesPath": "C:\\Users\\ujipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ujipe\\Desktop\\Entra21\\AulaPT10 - Banco de dados\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gustavo.silva22\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ujipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

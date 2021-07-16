@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace AulaPT10___Banco_de_dados
 {
@@ -207,9 +209,10 @@ namespace AulaPT10___Banco_de_dados
             //conn.Close();
 
             ////06
-            //SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            ////SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            //SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=tempdb;Integrated Security=True");
             //conn.Open();
-            //string delete = "DELETE from dbo.Emails WHERE NOT Email LIKE '%@outlook.com%' OR Email NOT LIKE '%@outlook.br%'";
+            //string delete = "DELETE from dbo.Emails WHERE NOT Email LIKE '%@outlook.com%'";
             ////string delete = "DELETE from dbo.Emails WHERE Email NOT LIKE '%@outlook.com%' OR NOT Email  LIKE '%@outlook.br%'";
             ////string delete = "DELETE from dbo.Emails WHERE NOT CONTAINS(Email, '@outlook.com')";
             //SqlCommand cmd = new SqlCommand(delete, conn);
@@ -226,36 +229,263 @@ namespace AulaPT10___Banco_de_dados
             //}
             //conn.Close();
 
-            //07
-            SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
-            SqlCommand cmd;
+            ////07
+            //SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            //SqlCommand cmd;
 
-            conn.Open();
-            string update = "UPDATE dbo.Funcionarios Set Salario = Salario * 1.2593";
-            cmd = new SqlCommand(update, conn);
-            cmd.ExecuteNonQuery();
-            conn.Close();
+            //conn.Open();
+            //string update = "UPDATE dbo.Funcionarios Set Salario = Salario * 1.2593";
+            //cmd = new SqlCommand(update, conn);
+            //cmd.ExecuteNonQuery();
+            //conn.Close();
 
-            conn.Open();
-            update = "UPDATE dbo.Funcionarios Set Salario = Salario * 0.9424 WHERE Salario > 5000";
-            cmd = new SqlCommand(update, conn);
-            cmd.ExecuteNonQuery();
-            conn.Close();
+            //conn.Open();
+            //update = "UPDATE dbo.Funcionarios Set Salario = Salario * 0.9424 WHERE Salario > 5000";
+            //cmd = new SqlCommand(update, conn);
+            //cmd.ExecuteNonQuery();
+            //conn.Close();
 
 
-            conn.Open();
-            string select = "SELECT Nome, Cargo, Salario FROM dbo.Funcionarios";
-            SqlDataReader dr;
-            cmd = new SqlCommand(select, conn);
-            dr = cmd.ExecuteReader();
-            while (dr.Read())
+            //conn.Open();
+            //string select = "SELECT Nome, Cargo, Salario FROM dbo.Funcionarios";
+            //SqlDataReader dr;
+            //cmd = new SqlCommand(select, conn);
+            //dr = cmd.ExecuteReader();
+            //while (dr.Read())
+            //{
+            //    Console.WriteLine("Nome: " + dr["Nome"]);
+            //    Console.WriteLine("Cargo: " + dr["Cargo"]);
+            //    Console.WriteLine("Salario: {0:c}", dr["Salario"]);
+            //    Console.WriteLine();
+            //}
+            //conn.Close();
+
+            //Lista02Lista02Lista02Lista02Lista02Lista02Lista02Lista02Lista02Lista02Lista02Lista02
+            //01
+            while (true)
             {
-                Console.WriteLine("Nome: " + dr["Nome"]);
-                Console.WriteLine("Cargo: " + dr["Cargo"]);
-                Console.WriteLine("Salario: {0:c}", dr["Salario"]);
-                Console.WriteLine();
+                Console.WriteLine("Qual menu você deseja acessar?");
+                Console.WriteLine("1 - Dono");
+                Console.WriteLine("2 - Venda");
+                string escolha = Console.ReadLine();
+                if (escolha == "1")
+                {
+                    Console.WriteLine("Você deseja fazer o que?");
+                    Console.WriteLine("1 - Adicionar um produto");
+                    Console.WriteLine("2 - Remover um produto");
+                    Console.WriteLine("3 - Atualizar um produto");
+                    Console.WriteLine("4 - Mostrar todos os produtos");
+                    escolha = Console.ReadLine();
+                    if (escolha == "1")
+                    {
+                        Console.WriteLine("Quantos produtos você deseja adicionar?");
+                        int quantidadeItens = int.Parse(Console.ReadLine());
+                        for (int i = 0; i < quantidadeItens; i++)
+                        {
+                            try
+                            {
+                                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=tempdb;Integrated Security=True");
+                                Console.WriteLine("Nome");
+                                string nome = Console.ReadLine();
+                                Console.WriteLine("Quantidade");
+                                int quantidade = int.Parse(Console.ReadLine());
+                                Console.WriteLine("Preço");
+                                int preco = int.Parse(Console.ReadLine());
+                                string insert = "INSERT into dbo.Produtos (Nome, Quantidade, Preco) values ('" + nome + "', '" + quantidade + "', '" + preco + "')";
+                                SqlCommand cmd;
+                                cmd = new SqlCommand(insert, conn);
+                                conn.Open();
+                                cmd.ExecuteNonQuery();
+                                conn.Close();
+                            }
+                            catch (Exception e)
+                            {
+                                Console.WriteLine("Aconteceu um erro inesperado!");
+                                Console.WriteLine(e.ToString());
+                            }
+                        }
+                    }
+                    else if (escolha == "2")
+                    {
+                        try
+                        {
+                            Console.WriteLine("Insira o nome do produto que você deseja remover");
+                            string nome = Console.ReadLine();
+                            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=tempdb;Integrated Security=True");
+                            string delete = "DELETE from dbo.Produtos where Nome = '" + nome + "'";
+                            SqlCommand cmd = new SqlCommand(delete, conn);
+                            conn.Open();
+                            cmd.ExecuteNonQuery();
+                            conn.Close();
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Aconteceu um erro inesperado!");
+                            Console.WriteLine(e.ToString());
+                        }
+                    }
+                    else if (escolha == "3")
+                    {
+                        try
+                        {
+
+                            Console.WriteLine("Insira o nome do produto que você deseja atualizar");
+                            string nome = Console.ReadLine();
+                            Console.WriteLine("Insira o novo nome");
+                            string novoNome = Console.ReadLine();
+                            Console.WriteLine("Insira a nova quantidade");
+                            int novoQuantidade = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Insira o novo preço");
+                            int novoPreco = int.Parse(Console.ReadLine());
+                            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=tempdb;Integrated Security=True");
+                            string update = "UPDATE dbo.Produtos Set Nome = '" + novoNome + "', Preco = '" + novoPreco + "', Quantidade = " + novoQuantidade + " WHERE Nome = '" + nome + "'";
+                            SqlCommand cmd = new SqlCommand();
+                            cmd = new SqlCommand(update, conn);
+                            conn.Open();
+                            cmd.ExecuteNonQuery();
+                            conn.Close();
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Aconteceu um erro inesperado!");
+                            Console.WriteLine(e.ToString());
+                        }
+                    }
+                    else if (escolha == "4")
+                    {
+                        try
+                        {
+                            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=tempdb;Integrated Security=True");
+                            SqlCommand cmd;
+                            conn.Open();
+                            string select = "SELECT Nome, Preco, Quantidade, idProduto FROM dbo.Produtos";
+                            SqlDataReader dr;
+                            cmd = new SqlCommand(select, conn);
+                            dr = cmd.ExecuteReader();
+                            while (dr.Read())
+                            {
+                                Console.WriteLine("ID: " + dr["idProduto"]);
+                                Console.WriteLine("Nome: " + dr["Nome"]);
+                                Console.WriteLine("Quantidade: " + dr["Quantidade"]);
+                                Console.WriteLine("Preço: {0:c}", dr["Preco"]);
+                                Console.WriteLine("Valor total: {0:c}", Convert.ToDouble(dr["Preco"]) * Convert.ToDouble(dr["Quantidade"]));
+                                Console.WriteLine();
+                            }
+                            conn.Close();
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Aconteceu um erro inesperado!");
+                            Console.WriteLine(e.ToString());
+                        }
+                    }
+                }
+                else if (escolha == "2")
+                {
+                    List<Produto> carrinho = new List<Produto>();
+                    SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=tempdb;Integrated Security=True");
+                    SqlCommand cmd;
+                    SqlDataReader dr;
+                    while (true)
+                    {
+                        Console.WriteLine("Itens disponíveis");
+                        try
+                        {
+                            conn.Open();
+                            string select = "SELECT Nome, Preco, idProduto FROM dbo.Produtos WHERE Quantidade > 0";
+                            cmd = new SqlCommand(select, conn);
+                            dr = cmd.ExecuteReader();
+                            while (dr.Read())
+                            {
+                                Console.WriteLine("ID: " + dr["idProduto"]);
+                                Console.WriteLine("Nome: " + dr["Nome"]);
+                                Console.WriteLine("Preço: {0:c}", dr["Preco"]);
+                                Console.WriteLine();
+                            }
+                            conn.Close();
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Aconteceu um erro inesperado!");
+                            Console.WriteLine(e.ToString());
+                        }
+
+                        Console.WriteLine("Insira o id do produto que você deseja adicionar no carrinho");
+                        Console.WriteLine("Insira -1 para encerrar");
+                        int id = int.Parse(Console.ReadLine());
+                        if (id < 0)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("Seu carrinho:");
+                            double valorTotal = 0;
+                            foreach (var item in carrinho)
+                            {
+                                Console.WriteLine("Nome do produto: " + item.Nome);
+                                Console.WriteLine("Preço do produto {0:c}", item.Preco);
+                                valorTotal += item.Preco;
+                            }
+                            Console.WriteLine("Valor total do seu carrinho: {0:c}", valorTotal);
+                            Console.WriteLine("Obrigado pela sua compra");
+                            carrinho.Clear();
+                            break;
+                        }
+
+                        conn.Open();
+                        string select2 = "SELECT Nome, Preco, idProduto, Quantidade FROM dbo.Produtos WHERE idProduto = " + id + "";
+                        cmd = new SqlCommand(select2, conn);
+                        dr = cmd.ExecuteReader();
+                        string nomeProduto = null;
+                        int precoProduto = 0;
+                        if (dr.Read())
+                        {                
+                            if (Convert.ToInt32(dr["Quantidade"]) > 0)
+                            {
+                                nomeProduto = Convert.ToString(dr["Nome"]);
+                                precoProduto = Convert.ToInt32(dr["Preco"]);
+
+                                Produto produto = new Produto(nomeProduto, precoProduto);
+                                carrinho.Add(produto);
+
+                                string update = "UPDATE dbo.Produtos Set Quantidade = Quantidade - 1 WHERE idProduto = '" + id + "'";
+                                cmd = new SqlCommand(update, conn);
+                                if (conn.State == ConnectionState.Open)
+                                {
+                                    conn.Close();
+                                }
+                                if (conn.State == ConnectionState.Closed)
+                                {
+                                    conn.Open();
+                                }
+                                cmd.ExecuteNonQuery();
+                                if (conn.State == ConnectionState.Open)
+                                {
+                                    conn.Close();
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Este produto acabou!");
+                                Console.ReadKey();
+                                if (conn.State == ConnectionState.Open)
+                                {
+                                    conn.Close();
+                                }
+                            }
+                        }
+                        if (conn.State == ConnectionState.Open)
+                        {
+                            conn.Close();
+                        }
+                        Console.Clear();
+                    }
+                }
+                else
+                {
+                    break;
+                }
+                Console.ReadKey();
+                Console.Clear();
             }
-            conn.Close();
         }
         public static void MostrarDados()
         {

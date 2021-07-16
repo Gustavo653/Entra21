@@ -21,3 +21,26 @@ C:\Users\gustavo.silva22\Desktop\Entra21\AulaPT10 - Banco de dados\obj\Debug\net
 C:\Users\gustavo.silva22\Desktop\Entra21\AulaPT10 - Banco de dados\obj\Debug\net5.0\ref\AulaPT10 - Banco de dados.dll
 C:\Users\gustavo.silva22\Desktop\Entra21\AulaPT10 - Banco de dados\obj\Debug\net5.0\AulaPT10 - Banco de dados.pdb
 C:\Users\gustavo.silva22\Desktop\Entra21\AulaPT10 - Banco de dados\obj\Debug\net5.0\AulaPT10 - Banco de dados.genruntimeconfig.cache
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\bin\Debug\net5.0\AulaPT10 - Banco de dados.exe
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\bin\Debug\net5.0\AulaPT10 - Banco de dados.deps.json
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\bin\Debug\net5.0\AulaPT10 - Banco de dados.runtimeconfig.json
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\bin\Debug\net5.0\AulaPT10 - Banco de dados.runtimeconfig.dev.json
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\bin\Debug\net5.0\AulaPT10 - Banco de dados.dll
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\bin\Debug\net5.0\ref\AulaPT10 - Banco de dados.dll
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\bin\Debug\net5.0\AulaPT10 - Banco de dados.pdb
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\obj\Debug\net5.0\AulaPT10 - Banco de dados.csproj.AssemblyReference.cache
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\obj\Debug\net5.0\AulaPT10 - Banco de dados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\obj\Debug\net5.0\AulaPT10 - Banco de dados.AssemblyInfoInputs.cache
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\obj\Debug\net5.0\AulaPT10 - Banco de dados.AssemblyInfo.cs
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\obj\Debug\net5.0\AulaPT10 - Banco de dados.csproj.CoreCompileInputs.cache
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\obj\Debug\net5.0\AulaPT10 - Banco de dados.csproj.CopyComplete
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\obj\Debug\net5.0\AulaPT10 - Banco de dados.dll
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\obj\Debug\net5.0\ref\AulaPT10 - Banco de dados.dll
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\obj\Debug\net5.0\AulaPT10 - Banco de dados.pdb
+C:\Users\ujipe\Desktop\Entra21\AulaPT10 - Banco de dados\obj\Debug\net5.0\AulaPT10 - Banco de dados.genruntimeconfig.cache
