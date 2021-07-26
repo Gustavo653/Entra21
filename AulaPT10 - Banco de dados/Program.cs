@@ -284,7 +284,7 @@ namespace AulaPT10___Banco_de_dados
                         {
                             try
                             {
-                                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=tempdb;Integrated Security=True");
+                                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=master;Integrated Security=True");
                                 Console.WriteLine("Nome");
                                 string nome = Console.ReadLine();
                                 Console.WriteLine("Quantidade");
@@ -311,7 +311,7 @@ namespace AulaPT10___Banco_de_dados
                         {
                             Console.WriteLine("Insira o nome do produto que você deseja remover");
                             string nome = Console.ReadLine();
-                            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=tempdb;Integrated Security=True");
+                            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=master;Integrated Security=True");
                             string delete = "DELETE from dbo.Produtos where Nome = '" + nome + "'";
                             SqlCommand cmd = new SqlCommand(delete, conn);
                             conn.Open();
@@ -337,7 +337,7 @@ namespace AulaPT10___Banco_de_dados
                             int novoQuantidade = int.Parse(Console.ReadLine());
                             Console.WriteLine("Insira o novo preço");
                             int novoPreco = int.Parse(Console.ReadLine());
-                            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=tempdb;Integrated Security=True");
+                            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=master;Integrated Security=True");
                             string update = "UPDATE dbo.Produtos Set Nome = '" + novoNome + "', Preco = '" + novoPreco + "', Quantidade = " + novoQuantidade + " WHERE Nome = '" + nome + "'";
                             SqlCommand cmd = new SqlCommand();
                             cmd = new SqlCommand(update, conn);
@@ -355,7 +355,7 @@ namespace AulaPT10___Banco_de_dados
                     {
                         try
                         {
-                            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=tempdb;Integrated Security=True");
+                            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=master;Integrated Security=True");
                             SqlCommand cmd;
                             conn.Open();
                             string select = "SELECT Nome, Preco, Quantidade, idProduto FROM dbo.Produtos";
@@ -383,7 +383,7 @@ namespace AulaPT10___Banco_de_dados
                 else if (escolha == "2")
                 {
                     List<Produto> carrinho = new List<Produto>();
-                    SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=tempdb;Integrated Security=True");
+                    SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=master;Integrated Security=True");
                     SqlCommand cmd;
                     SqlDataReader dr;
                     while (true)
@@ -409,7 +409,6 @@ namespace AulaPT10___Banco_de_dados
                             Console.WriteLine("Aconteceu um erro inesperado!");
                             Console.WriteLine(e.ToString());
                         }
-
                         Console.WriteLine("Insira o id do produto que você deseja adicionar no carrinho");
                         Console.WriteLine("Insira -1 para encerrar");
                         int id = int.Parse(Console.ReadLine());
