@@ -20,7 +20,7 @@ namespace AulaPT10___Banco_de_dados
             //    }
             //    else if (escolha == "insert")
             //    {
-            //        SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            //        SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
             //        conn.Open();
             //        Console.WriteLine("Nome");
             //        string nome = Console.ReadLine();
@@ -46,7 +46,7 @@ namespace AulaPT10___Banco_de_dados
             //        Console.WriteLine("Insira a nova Idade");
             //        int novaIdade = int.Parse(Console.ReadLine());
 
-            //        SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            //        SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
             //        conn.Open();
             //        string update = "UPDATE dbo.Pessoa Set Nome = '" + novoNome + "', Cpf = '" + novoCpf + "', Idade = " + novaIdade + " WHERE Nome = '" + nome + "'";
             //        SqlCommand cmd = new SqlCommand();
@@ -58,7 +58,7 @@ namespace AulaPT10___Banco_de_dados
             //        Console.WriteLine("Mostrando todos os nomes, escolha qual você deseja deletar");
             //        MostrarDados(2);
             //        string nome = Console.ReadLine();
-            //        SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            //        SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
             //        conn.Open();
             //        string delete = "DELETE from dbo.Pessoa where Nome = '" + nome + "'";
             //        SqlCommand cmd = new SqlCommand(delete, conn);
@@ -67,7 +67,7 @@ namespace AulaPT10___Banco_de_dados
             //}
 
             ////01
-            //SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            //SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
             //conn.Open();
             //SqlCommand cmd;
             //for (int i = 0; i < 4; i++)
@@ -97,7 +97,7 @@ namespace AulaPT10___Banco_de_dados
             //conn.Close();            
 
             ////02
-            //SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            //SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
             //conn.Open();
             //SqlCommand cmd;
             //for (int i = 0; i < 4; i++)
@@ -127,7 +127,7 @@ namespace AulaPT10___Banco_de_dados
             //conn.Close();
 
             ////03
-            //SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            //SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
             //SqlCommand cmd;
             //for (int i = 0; i < 2; i++)
             //{
@@ -159,7 +159,7 @@ namespace AulaPT10___Banco_de_dados
             //conn.Close();
 
             ////04
-            //SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            //SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
             //SqlCommand cmd;
             //for (int i = 0; i < 4; i++)
             //{
@@ -185,7 +185,7 @@ namespace AulaPT10___Banco_de_dados
             //conn.Close();
 
             ////05
-            //SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            //SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
             //SqlCommand cmd;       
 
             //conn.Open();
@@ -209,7 +209,7 @@ namespace AulaPT10___Banco_de_dados
             //conn.Close();
 
             ////06
-            ////SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            ////SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
             //SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=tempdb;Integrated Security=True");
             //conn.Open();
             //string delete = "DELETE from dbo.Emails WHERE NOT Email LIKE '%@outlook.com%'";
@@ -230,7 +230,7 @@ namespace AulaPT10___Banco_de_dados
             //conn.Close();
 
             ////07
-            //SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            //SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
             //SqlCommand cmd;
 
             //conn.Open();
@@ -284,7 +284,7 @@ namespace AulaPT10___Banco_de_dados
                         {
                             try
                             {
-                                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=master;Integrated Security=True");
+                                SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
                                 Console.WriteLine("Nome");
                                 string nome = Console.ReadLine();
                                 Console.WriteLine("Quantidade");
@@ -311,7 +311,7 @@ namespace AulaPT10___Banco_de_dados
                         {
                             Console.WriteLine("Insira o nome do produto que você deseja remover");
                             string nome = Console.ReadLine();
-                            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=master;Integrated Security=True");
+                            SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
                             string delete = "DELETE from dbo.Produtos where Nome = '" + nome + "'";
                             SqlCommand cmd = new SqlCommand(delete, conn);
                             conn.Open();
@@ -337,7 +337,7 @@ namespace AulaPT10___Banco_de_dados
                             int novoQuantidade = int.Parse(Console.ReadLine());
                             Console.WriteLine("Insira o novo preço");
                             int novoPreco = int.Parse(Console.ReadLine());
-                            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=master;Integrated Security=True");
+                            SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
                             string update = "UPDATE dbo.Produtos Set Nome = '" + novoNome + "', Preco = '" + novoPreco + "', Quantidade = " + novoQuantidade + " WHERE Nome = '" + nome + "'";
                             SqlCommand cmd = new SqlCommand();
                             cmd = new SqlCommand(update, conn);
@@ -355,7 +355,7 @@ namespace AulaPT10___Banco_de_dados
                     {
                         try
                         {
-                            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=master;Integrated Security=True");
+                            SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
                             SqlCommand cmd;
                             conn.Open();
                             string select = "SELECT Nome, Preco, Quantidade, idProduto FROM dbo.Produtos";
@@ -383,7 +383,7 @@ namespace AulaPT10___Banco_de_dados
                 else if (escolha == "2")
                 {
                     List<Produto> carrinho = new List<Produto>();
-                    SqlConnection conn = new SqlConnection("Data Source=DESKTOP-UEQIVQ6;Initial Catalog=master;Integrated Security=True");
+                    SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
                     SqlCommand cmd;
                     SqlDataReader dr;
                     while (true)
@@ -409,6 +409,7 @@ namespace AulaPT10___Banco_de_dados
                             Console.WriteLine("Aconteceu um erro inesperado!");
                             Console.WriteLine(e.ToString());
                         }
+
                         Console.WriteLine("Insira o id do produto que você deseja adicionar no carrinho");
                         Console.WriteLine("Insira -1 para encerrar");
                         int id = int.Parse(Console.ReadLine());
@@ -488,7 +489,7 @@ namespace AulaPT10___Banco_de_dados
         }
         public static void MostrarDados()
         {
-            SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
             conn.Open();
             string select = "SELECT Nome, Idade, Cpf FROM dbo.Pessoa";
             SqlCommand cmd;
@@ -506,7 +507,7 @@ namespace AulaPT10___Banco_de_dados
         }
         public static void MostrarDados(int a)
         {
-            SqlConnection conn = new SqlConnection("Data Source = BUE205D12; Initial Catalog = tempdb; User ID=guest01;Password=@Senac2021");
+            SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;User ID=guest01;Password=@Senac2021");
             conn.Open();
             string select = "SELECT Nome, Idade, Cpf FROM dbo.Pessoa";
             SqlCommand cmd;
