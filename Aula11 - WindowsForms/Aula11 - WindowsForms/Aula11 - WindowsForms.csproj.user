@@ -7,6 +7,12 @@
     <Compile Update="Exec2.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Exec3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Exec4.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

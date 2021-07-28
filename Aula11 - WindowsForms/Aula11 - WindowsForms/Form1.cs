@@ -33,15 +33,21 @@ namespace Aula11___WindowsForms
             }
             else if (comboBox1.Text == "03")
             {
-
+                Exec3 exec = new Exec3();
+                this.Visible = false;
+                exec.Show();
             }
             else if (comboBox1.Text == "04")
             {
-
+                Exec4 exec = new Exec4();
+                this.Visible = false;
+                exec.Show();
             }
             else
             {
-
+                Exec5 exec = new Exec5();
+                this.Visible = false;
+                exec.show();
             }
         }
     }

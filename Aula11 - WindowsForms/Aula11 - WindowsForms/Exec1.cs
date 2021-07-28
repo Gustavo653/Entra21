@@ -16,5 +16,12 @@ namespace Aula11___WindowsForms
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Seu nome é: {txtNome.Text}" +
+                $"\nSeu CPF é: {txtCpf.Text}" +
+                $"\nSua idade é: {txtIdade.Text}");
+        }
     }
 }
