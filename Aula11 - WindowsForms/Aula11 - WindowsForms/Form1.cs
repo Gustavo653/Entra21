@@ -47,7 +47,7 @@ namespace Aula11___WindowsForms
             {
                 Exec5 exec = new Exec5();
                 this.Visible = false;
-                exec.show();
+                exec.Show();
             }
         }
     }

@@ -35,7 +35,7 @@ namespace Aula11___WindowsForms
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(318, 219);
+            this.button1.Location = new System.Drawing.Point(65, 109);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -52,7 +52,7 @@ namespace Aula11___WindowsForms
             "03",
             "04",
             "05"});
-            this.comboBox1.Location = new System.Drawing.Point(318, 152);
+            this.comboBox1.Location = new System.Drawing.Point(65, 42);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 23);
             this.comboBox1.TabIndex = 1;
@@ -61,7 +61,7 @@ namespace Aula11___WindowsForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(240, 180);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";

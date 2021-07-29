@@ -54,3 +54,6 @@ C:\Users\ujipe\Desktop\Entra21\Aula11 - WindowsForms\Aula11 - WindowsForms\obj\D
 C:\Users\ujipe\Desktop\Entra21\Aula11 - WindowsForms\Aula11 - WindowsForms\obj\Debug\net5.0-windows\Aula11 - WindowsForms.pdb
 C:\Users\ujipe\Desktop\Entra21\Aula11 - WindowsForms\Aula11 - WindowsForms\obj\Debug\net5.0-windows\Aula11 - WindowsForms.genruntimeconfig.cache
 C:\Users\ujipe\Desktop\Entra21\Aula11 - WindowsForms\Aula11 - WindowsForms\obj\Debug\net5.0-windows\Aula11___WindowsForms.Exec4.resources
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula11 - WindowsForms\Aula11 - WindowsForms\obj\Debug\net5.0-windows\Aula11___WindowsForms.Exec3.resources
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula11 - WindowsForms\Aula11 - WindowsForms\obj\Debug\net5.0-windows\Aula11___WindowsForms.Exec4.resources
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula11 - WindowsForms\Aula11 - WindowsForms\obj\Debug\net5.0-windows\Aula11___WindowsForms.Exec5.resources
