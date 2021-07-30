@@ -13,7 +13,7 @@ namespace Aula11___WindowsForms
 {
     public partial class Exec5 : Form
     {
-        private SqlConnection conn = new SqlConnection("Data Source=BUE205D002;Initial Catalog=BDTurmaManha;Persist Security Info=True;User ID=guest01;Password=@Senac2021");
+        private SqlConnection conn = new SqlConnection("workstation id=BDEntra21.mssql.somee.com;packet size=4096;user id=Gustavo10_SQLLogin_1;pwd=dg6kzsavsg;data source=BDEntra21.mssql.somee.com;persist security info=False;initial catalog=BDEntra21 ");
         public Exec5()
         {
             InitializeComponent();
