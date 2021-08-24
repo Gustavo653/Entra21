@@ -1,0 +1,11 @@
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula11PT2 - WinForms MVC\bin\Debug\Aula11PT2 - WinForms MVC.exe.config
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula11PT2 - WinForms MVC\bin\Debug\Aula11PT2 - WinForms MVC.exe
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula11PT2 - WinForms MVC\bin\Debug\Aula11PT2 - WinForms MVC.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula11PT2 - WinForms MVC\obj\Debug\Aula11PT2 - WinForms MVC.csproj.AssemblyReference.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula11PT2 - WinForms MVC\obj\Debug\Aula11PT2___WinForms_MVC.Properties.Resources.resources
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula11PT2 - WinForms MVC\obj\Debug\Aula11PT2 - WinForms MVC.csproj.GenerateResource.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula11PT2 - WinForms MVC\obj\Debug\Aula11PT2 - WinForms MVC.csproj.CoreCompileInputs.cache
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula11PT2 - WinForms MVC\obj\Debug\Aula11PT2 - WinForms MVC.exe
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula11PT2 - WinForms MVC\obj\Debug\Aula11PT2 - WinForms MVC.pdb
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula11PT2 - WinForms MVC\obj\Debug\Aula11PT2___WinForms_MVC.View.Exec02.resources
+C:\Users\gustavo.silva22\Desktop\Entra21\Aula11PT2 - WinForms MVC\obj\Debug\Aula11PT2___WinForms_MVC.View.Form1.resources
