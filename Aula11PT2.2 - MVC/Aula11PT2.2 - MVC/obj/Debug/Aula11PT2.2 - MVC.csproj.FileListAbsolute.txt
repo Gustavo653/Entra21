@@ -1,0 +1,11 @@
+C:\Users\ujipe\Documents\GitHub\Entra21\Aula11PT2.2 - MVC\Aula11PT2.2 - MVC\bin\Debug\Aula11PT2.2 - MVC.exe.config
+C:\Users\ujipe\Documents\GitHub\Entra21\Aula11PT2.2 - MVC\Aula11PT2.2 - MVC\bin\Debug\Aula11PT2.2 - MVC.exe
+C:\Users\ujipe\Documents\GitHub\Entra21\Aula11PT2.2 - MVC\Aula11PT2.2 - MVC\bin\Debug\Aula11PT2.2 - MVC.pdb
+C:\Users\ujipe\Documents\GitHub\Entra21\Aula11PT2.2 - MVC\Aula11PT2.2 - MVC\obj\Debug\Aula11PT2.2 - MVC.csproj.AssemblyReference.cache
+C:\Users\ujipe\Documents\GitHub\Entra21\Aula11PT2.2 - MVC\Aula11PT2.2 - MVC\obj\Debug\Aula11PT2._2___MVC.Properties.Resources.resources
+C:\Users\ujipe\Documents\GitHub\Entra21\Aula11PT2.2 - MVC\Aula11PT2.2 - MVC\obj\Debug\Aula11PT2._2___MVC.Form1.resources
+C:\Users\ujipe\Documents\GitHub\Entra21\Aula11PT2.2 - MVC\Aula11PT2.2 - MVC\obj\Debug\Aula11PT2.2 - MVC.csproj.GenerateResource.cache
+C:\Users\ujipe\Documents\GitHub\Entra21\Aula11PT2.2 - MVC\Aula11PT2.2 - MVC\obj\Debug\Aula11PT2.2 - MVC.csproj.CoreCompileInputs.cache
+C:\Users\ujipe\Documents\GitHub\Entra21\Aula11PT2.2 - MVC\Aula11PT2.2 - MVC\obj\Debug\Aula11PT2.2 - MVC.exe
+C:\Users\ujipe\Documents\GitHub\Entra21\Aula11PT2.2 - MVC\Aula11PT2.2 - MVC\obj\Debug\Aula11PT2.2 - MVC.pdb
+C:\Users\ujipe\Documents\GitHub\Entra21\Aula11PT2.2 - MVC\Aula11PT2.2 - MVC\obj\Debug\Aula11PT2._2___MVC.View.Form2.resources
